@@ -1,0 +1,34 @@
+Rank: 6, ingestion time: 0.02536296844482422, # vertices: 3524, # edges: 5158
+Rank: 9, ingestion time: 0.0254671573638916, # vertices: 3524, # edges: 5158
+Rank: 10, ingestion time: 0.02559375762939453, # vertices: 3524, # edges: 5158
+Rank: 0, ingestion time: 0.04353165626525879, # vertices: 3524, # edges: 5158
+Rank: 8, ingestion time: 0.04351949691772461, # vertices: 3524, # edges: 5158
+Rank: 3, ingestion time: 0.043730974197387695, # vertices: 3524, # edges: 5158
+Rank: 2, ingestion time: 0.04362201690673828, # vertices: 3524, # edges: 5158
+Rank: 5, ingestion time: 0.049736976623535156, # vertices: 3524, # edges: 5158
+Rank: 7, ingestion time: 0.04971170425415039, # vertices: 3524, # edges: 5158
+Rank: 1, ingestion time: 0.049870967864990234, # vertices: 3524, # edges: 5158
+Rank: 4, ingestion time: 0.050839900970458984, # vertices: 3524, # edges: 5158
+Rank: 10 assigned slices: [10]
+Rank: 9 assigned slices: [9]
+Rank: 6 assigned slices: [6]
+Rank: 7 assigned slices: [7]
+Rank: 5 assigned slices: [5]
+Rank: 0 assigned slices: [0]
+Rank: 3 assigned slices: [3]
+Rank: 2 assigned slices: [2]
+Rank: 8 assigned slices: [8]
+Rank: 1 assigned slices: [1]
+Rank: 4 assigned slices: [4]
+Rank: 10 extracted slice: 10
+Rank: 9 extracted slice: 9
+Rank: 6 extracted slice: 6
+Rank: 8 extracted slice: 8
+Rank: 7 extracted slice: 7
+Rank: 5 extracted slice: 5
+Rank: 3 extracted slice: 3
+Rank: 2 extracted slice: 2
+Rank: 0 extracted slice: 0
+Rank: 1 extracted slice: 1
+Rank: 4 extracted slice: 4
+Total elapsed time: 0.09631156921386719

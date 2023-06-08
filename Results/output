@@ -1,0 +1,1728 @@
+
+--------------------
+Fetching submodules...
+--------------------
+
+
+--------------------
+Done fetching submodules.
+--------------------
+
+
+--------------------
+Building SST-DUMPI...
+--------------------
+
+Cloning into 'sst-dumpi'...
+/code/submodules/sst-dumpi/bootstrap.sh: 14: glibtoolize: not found
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'bin'.
+libtoolize: linking file 'bin/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'acinclude'.
+libtoolize: linking file 'acinclude/libtool.m4'
+libtoolize: linking file 'acinclude/ltoptions.m4'
+libtoolize: linking file 'acinclude/ltsugar.m4'
+libtoolize: linking file 'acinclude/ltversion.m4'
+libtoolize: linking file 'acinclude/lt~obsolete.m4'
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'bin'.
+libtoolize: copying file 'bin/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'acinclude'.
+libtoolize: copying file 'acinclude/libtool.m4'
+libtoolize: copying file 'acinclude/ltoptions.m4'
+libtoolize: copying file 'acinclude/ltsugar.m4'
+libtoolize: copying file 'acinclude/ltversion.m4'
+libtoolize: copying file 'acinclude/lt~obsolete.m4'
+configure.ac:53: installing 'bin/ar-lib'
+configure.ac:53: installing 'bin/compile'
+configure.ac:51: installing 'bin/config.guess'
+configure.ac:51: installing 'bin/config.sub'
+configure.ac:52: installing 'bin/install-sh'
+configure.ac:52: installing 'bin/missing'
+dumpi/bin/Makefile.am: installing 'bin/depcomp'
+parallel-tests: installing 'bin/test-driver'
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... mpicc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether mpicc accepts -g... yes
+checking for mpicc option to accept ISO C89... none needed
+checking whether mpicc understands -c and -o together... yes
+checking dependency style of mpicc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking whether make supports nested variables... (cached) yes
+checking for gcc... (cached) mpicc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether mpicc accepts -g... (cached) yes
+checking for mpicc option to accept ISO C89... (cached) none needed
+checking whether mpicc understands -c and -o together... (cached) yes
+checking dependency style of mpicc... (cached) gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether mpicxx accepts -g... yes
+checking dependency style of mpicxx... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by mpicc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from mpicc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+/code/submodules/sst-dumpi/configure: line 8159: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... mpicc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if mpicc supports -fno-rtti -fno-exceptions... no
+checking for mpicc option to produce PIC... -fPIC -DPIC
+checking if mpicc PIC flag -fPIC -DPIC works... yes
+checking if mpicc static flag -static works... no
+checking if mpicc supports -c -o file.o... yes
+checking if mpicc supports -c -o file.o... (cached) yes
+checking whether the mpicc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... mpicxx -E
+checking for ld used by mpicxx... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the mpicxx linker (/usr/bin/ld) supports shared libraries... yes
+checking for mpicxx option to produce PIC... -fPIC -DPIC
+checking if mpicxx PIC flag -fPIC -DPIC works... yes
+checking if mpicxx static flag -static works... no
+checking if mpicxx supports -c -o file.o... yes
+checking if mpicxx supports -c -o file.o... (cached) yes
+checking whether the mpicxx linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for string.h... (cached) yes
+checking whether POSIX timers should be used... available without linking -lrt
+checking for gettimeofday... yes
+checking for getrusage... yes
+checking whether MPI uses const qualifier... not for deprecated
+checking whether mpi.h is found... yes
+checking otf2/otf2.h usability... no
+checking otf2/otf2.h presence... no
+checking for otf2/otf2.h... no
+checking whether mpicxx supports C++11 features by default... yes
+checking whether mpicc can compile and link an MPI program... yes
+checking whether pthreads provide thread-local storage... yes
+checking papi support... no
+checking instrumentation settings... instrumentation not enabled
+checking whether HOST_NAME_MAX is declared... no
+checking for dot... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating dumpi/Makefile
+config.status: creating dumpi/common/Makefile
+config.status: creating dumpi/libdumpi/Makefile
+config.status: creating dumpi/libundumpi/Makefile
+config.status: creating dumpi/libotf2dump/Makefile
+config.status: creating dumpi/bin/Makefile
+config.status: creating dumpi/test/Makefile
+config.status: creating tests/Makefile
+config.status: creating docs/doxygen.cfg
+config.status: creating dumpi/dumpiconfig-generated.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+DUMPI Configuration Summary:
+---------------------------------------------------------------
+Install prefix     /code/submodules/sst-dumpi/build
+C compiler         mpicc
+C++ compiler       mpicxx
+MAC SDK            no
+CFLAGS             -g -O2
+CXXFLAGS           -g -O2
+CPPFLAGS           
+LDFLAGS            
+LIBS               
+OTF2 support       no
+---------------------------------------------------------------
+Making all in dumpi
+make[1]: Entering directory '/code/submodules/sst-dumpi/dumpi'
+make  all-recursive
+make[2]: Entering directory '/code/submodules/sst-dumpi/dumpi'
+Making all in common
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/common'
+  CC       types.lo
+  CC       io.lo
+  CC       funcs.lo
+  CC       dumpiio.lo
+  CC       funclabels.lo
+  CC       gettime.lo
+  CC       perfctrs.lo
+  CC       constants.lo
+  CC       perfctrtags.lo
+  CC       debugflags.lo
+  CC       iodefs.lo
+  CCLD     libdumpi_common.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/common'
+Making all in libdumpi
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/libdumpi'
+  CC       data.lo
+  CC       callprofile.lo
+  CC       libdumpi.lo
+  CC       init.lo
+  CC       callprofile-addrset.lo
+  CC       mpibindings-maps.lo
+  CC       mpibindings2.lo
+  CC       mpibindings-utils.lo
+mpibindings2.c: In function ‘MPI_Pcontrol’:
+mpibindings2.c:164:25: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘uint64_t’ {aka ‘long unsigned int’} [-Wformat=]
+  164 |         fprintf(stderr, "WARNING:  DUMPI:  MPI_Pcontrol(3, ...):  "
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  165 |                 "User key %llu is outside the recommended range "
+  166 |                 "%llu through %llu\n", stat.fn, MIN_USER_KEY, MAX_USER_KEY-1);
+      |                                        ~~~~~~~
+      |                                            |
+      |                                            uint64_t {aka long unsigned int}
+mpibindings2.c:165:30: note: format string is defined here
+  165 |                 "User key %llu is outside the recommended range "
+      |                           ~~~^
+      |                              |
+      |                              long long unsigned int
+      |                           %lu
+mpibindings2.c: In function ‘MPI_Type_hvector’:
+mpibindings2.c:1428:3: warning: ‘PMPI_Type_hvector’ is deprecated: PMPI_Type_hvector was removed in MPI-3.0.  Use PMPI_Type_create_hvector instead.  continuing... [-Wdeprecated-declarations]
+ 1428 |   retval = PMPI_Type_hvector(count, blocklength, stride, oldtype, newtype);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2837:20: note: declared here
+ 2837 | OMPI_DECLSPEC  int PMPI_Type_hvector(int count, int blocklength, MPI_Aint stride,
+      |                    ^~~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Type_hindexed’:
+mpibindings2.c:1498:3: warning: ‘PMPI_Type_hindexed’ is deprecated: PMPI_Type_hindexed was removed in MPI-3.0.  Use PMPI_Type_create_hindexed instead.  continuing... [-Wdeprecated-declarations]
+ 1498 |   retval = PMPI_Type_hindexed(count, lengths, indices, oldtype, newtype);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2830:20: note: declared here
+ 2830 | OMPI_DECLSPEC  int PMPI_Type_hindexed(int count, int array_of_blocklengths[],
+      |                    ^~~~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Type_struct’:
+mpibindings2.c:1535:3: warning: ‘PMPI_Type_struct’ is deprecated: PMPI_Type_struct was removed in MPI-3.0.  Use PMPI_Type_create_struct instead.  continuing... [-Wdeprecated-declarations]
+ 1535 |   retval = PMPI_Type_struct(count, lengths, indices, oldtypes, newtype);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2849:20: note: declared here
+ 2849 | OMPI_DECLSPEC  int PMPI_Type_struct(int count, int array_of_blocklengths[],
+      |                    ^~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Address’:
+mpibindings2.c:1566:3: warning: ‘PMPI_Address’ is deprecated: PMPI_Address was removed in MPI-3.0.  Use PMPI_Get_address instead.  continuing... [-Wdeprecated-declarations]
+ 1566 |   retval = PMPI_Address(buf, address);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2806:20: note: declared here
+ 2806 | OMPI_DECLSPEC  int PMPI_Address(void *location, MPI_Aint *address)
+      |                    ^~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Type_extent’:
+mpibindings2.c:1596:3: warning: ‘PMPI_Type_extent’ is deprecated: PMPI_Type_extent was removed in MPI-3.0.  Use PMPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+ 1596 |   retval = PMPI_Type_extent(datatype, extent);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2824:20: note: declared here
+ 2824 | OMPI_DECLSPEC  int PMPI_Type_extent(MPI_Datatype type, MPI_Aint *extent)
+      |                    ^~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Type_lb’:
+mpibindings2.c:1656:3: warning: ‘PMPI_Type_lb’ is deprecated: PMPI_Type_lb was removed in MPI-3.0.  Use PMPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+ 1656 |   retval = PMPI_Type_lb(datatype, lb);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2842:20: note: declared here
+ 2842 | OMPI_DECLSPEC  int PMPI_Type_lb(MPI_Datatype type, MPI_Aint *lb)
+      |                    ^~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Type_ub’:
+mpibindings2.c:1686:3: warning: ‘PMPI_Type_ub’ is deprecated: PMPI_Type_ub was removed in MPI-3.0.  Use PMPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+ 1686 |   retval = PMPI_Type_ub(datatype, ub);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2856:20: note: declared here
+ 2856 | OMPI_DECLSPEC  int PMPI_Type_ub(MPI_Datatype mtype, MPI_Aint *ub)
+      |                    ^~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Keyval_create’:
+mpibindings2.c:3251:3: warning: ‘PMPI_Keyval_create’ is deprecated: PMPI_Keyval_create was deprecated in MPI-2.0; use PMPI_Comm_create_keyval instead. [-Wdeprecated-declarations]
+ 3251 |   retval = PMPI_Keyval_create(copyfunc, delfunc, key, state);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2744:20: note: declared here
+ 2744 | OMPI_DECLSPEC  int PMPI_Keyval_create(MPI_Copy_function *copy_fn,
+      |                    ^~~~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Keyval_free’:
+mpibindings2.c:3281:3: warning: ‘PMPI_Keyval_free’ is deprecated: PMPI_Keyval_free was deprecated in MPI-2.0; PMPI_Comm_free_keyval instead. [-Wdeprecated-declarations]
+ 3281 |   retval = PMPI_Keyval_free(key);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2750:20: note: declared here
+ 2750 | OMPI_DECLSPEC  int PMPI_Keyval_free(int *keyval)
+      |                    ^~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Attr_put’:
+mpibindings2.c:3311:3: warning: ‘PMPI_Attr_put’ is deprecated: PMPI_Attr_put was deprecated in MPI-2.0; use PMPI_Comm_set_attr instead [-Wdeprecated-declarations]
+ 3311 |   retval = PMPI_Attr_put(comm, key, attr);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2726:20: note: declared here
+ 2726 | OMPI_DECLSPEC  int PMPI_Attr_put(MPI_Comm comm, int keyval, void *attribute_val)
+      |                    ^~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Attr_get’:
+mpibindings2.c:3341:3: warning: ‘PMPI_Attr_get’ is deprecated: PMPI_Attr_get was deprecated in MPI-2.0; use PMPI_Comm_get_attr instead [-Wdeprecated-declarations]
+ 3341 |   retval = PMPI_Attr_get(comm, key, attr, flag);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2722:20: note: declared here
+ 2722 | OMPI_DECLSPEC  int PMPI_Attr_get(MPI_Comm comm, int keyval, void *attribute_val, int *flag)
+      |                    ^~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Attr_delete’:
+mpibindings2.c:3372:3: warning: ‘PMPI_Attr_delete’ is deprecated: PMPI_Attr_delete was deprecated in MPI-2.0; use PMPI_Comm_delete_attr instead [-Wdeprecated-declarations]
+ 3372 |   retval = PMPI_Attr_delete(comm, key);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2718:20: note: declared here
+ 2718 | OMPI_DECLSPEC  int PMPI_Attr_delete(MPI_Comm comm, int keyval)
+      |                    ^~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Errhandler_create’:
+mpibindings2.c:4025:3: warning: ‘PMPI_Errhandler_create’ is deprecated: PMPI_Errhandler_create was removed in MPI-3.0.  Use PMPI_Comm_create_errhandler instead.  continuing... [-Wdeprecated-declarations]
+ 4025 |   retval = PMPI_Errhandler_create(function, errhandler);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2811:20: note: declared here
+ 2811 | OMPI_DECLSPEC  int PMPI_Errhandler_create(MPI_Handler_function *function,
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Errhandler_set’:
+mpibindings2.c:4056:3: warning: ‘PMPI_Errhandler_set’ is deprecated: PMPI_Errhandler_set was removed in MPI-3.0.  Use PMPI_Comm_set_errhandler instead.  continuing... [-Wdeprecated-declarations]
+ 4056 |   retval = PMPI_Errhandler_set(comm, errhandler);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2820:20: note: declared here
+ 2820 | OMPI_DECLSPEC  int PMPI_Errhandler_set(MPI_Comm comm, MPI_Errhandler errhandler)
+      |                    ^~~~~~~~~~~~~~~~~~~
+mpibindings2.c: In function ‘MPI_Errhandler_get’:
+mpibindings2.c:4085:3: warning: ‘PMPI_Errhandler_get’ is deprecated: PMPI_Errhandler_get was removed in MPI-3.0.  Use PMPI_Comm_get_errhandler instead.  continuing... [-Wdeprecated-declarations]
+ 4085 |   retval = PMPI_Errhandler_get(comm, errhandler);
+      |   ^~~~~~
+In file included from ../../dumpi/libdumpi/data.h:48,
+                 from ../../dumpi/libdumpi/mpibindings-maps.h:50,
+                 from ../../dumpi/libdumpi/mpibindings.h:48,
+                 from mpibindings2.c:46:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2816:20: note: declared here
+ 2816 | OMPI_DECLSPEC  int PMPI_Errhandler_get(MPI_Comm comm, MPI_Errhandler *errhandler)
+      |                    ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:495,
+                 from ../../dumpi/libdumpi/init.h:53,
+                 from init.c:45:
+In function ‘strncpy’,
+    inlined from ‘process_keyval’ at init.c:496:7,
+    inlined from ‘read_config’ at init.c:326:2:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:10: warning: ‘__builtin_strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+init.c: In function ‘read_config’:
+init.c:496:37: note: length computed here
+  496 |       strncpy(tmp_file_root, value, strlen(value)+1);
+      |                                     ^~~~~~~~~~~~~
+mpibindings2.c: At top level:
+mpibindings2.c:6549:1: warning: ‘MPI_Comm_errhandler_fn’ is deprecated: MPI_Comm_errhandler_fn was deprecated in MPI-2.2; use MPI_Comm_errhandler_function instead [-Wdeprecated-declarations]
+ 6549 | int MPI_Comm_create_errhandler(MPI_Comm_errhandler_fn *errfun, MPI_Errhandler *errhandler) {
+      | ^~~
+mpibindings2.c:6638:1: warning: ‘MPI_File_errhandler_fn’ is deprecated: MPI_File_errhandler_fn was deprecated in MPI-2.2; use MPI_File_errhandler_function instead [-Wdeprecated-declarations]
+ 6638 | int MPI_File_create_errhandler(MPI_File_errhandler_fn *errfun, MPI_Errhandler *errhandler) {
+      | ^~~
+mpibindings2.c:7542:1: warning: ‘MPI_Win_errhandler_fn’ is deprecated: MPI_Win_errhandler_fn was deprecated in MPI-2.2; use MPI_Win_errhandler_function instead [-Wdeprecated-declarations]
+ 7542 | int MPI_Win_create_errhandler(MPI_Win_errhandler_fn *errfun, MPI_Errhandler *errhandler) {
+      | ^~~
+  CCLD     libdumpi.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/libdumpi'
+Making all in libundumpi
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/libundumpi'
+  CC       libundumpi.lo
+  CC       callbacks.lo
+  CC       bindings.lo
+  CCLD     libundumpi.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/libundumpi'
+Making all in bin
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/bin'
+  CC       dumpi2ascii.o
+  CC       dumpi2ascii-callbacks.o
+  CC       dumpi2dumpi.o
+  CC       dumpi2dumpi-meta.o
+  CC       dumpi2dumpi-opts.o
+  CC       dumpi2dumpi-callbacks.o
+  CC       dumpi2dumpi-help.o
+  CXX      dumpistats.o
+  CXX      dumpistats-timebin.o
+  CXX      dumpistats-handlers.o
+  CXX      dumpistats-callbacks.o
+  CXX      dumpistats-gatherbin.o
+  CXX      trace.o
+  CXX      metadata.o
+  CXX      sharedstate.o
+  CC       ascii2dumpi.o
+  CXX      sharedstate-commconstruct.o
+dumpi2ascii.c: In function ‘print_addresses’:
+dumpi2ascii.c:289:42: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘uint64_t’ {aka ‘const long unsigned int’} [-Wformat=]
+  289 |     fprintf(dumpfh, "Function address %llu has label %s\n", addresses[i], names[i]);
+      |                                       ~~~^                  ~~~~~~~~~~~~
+      |                                          |                           |
+      |                                          long long unsigned int      uint64_t {aka const long unsigned int}
+      |                                       %lu
+ascii2dumpi.c: In function ‘save_old_starttime’:
+ascii2dumpi.c:449:3: warning: implicit declaration of function ‘strptime’; did you mean ‘strftime’? [-Wimplicit-function-declaration]
+  449 |   strptime(value, "%a %b %d %T %Z %Y", &tmo);
+      |   ^~~~~~~~
+      |   strftime
+ascii2dumpi.c: In function ‘wrap_getline’:
+ascii2dumpi.c:181:5: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+  181 |     fgets(wrap->buff + wrap->buffsize - 1, wrap->buffsize+1, wrap->fp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from ../../dumpi/common/types.h:51,
+                 from ../../dumpi/common/argtypes.h:48,
+                 from ../../dumpi/libundumpi/callbacks.h:48,
+                 from ../../dumpi/libundumpi/libundumpi.h:48,
+                 from ../../dumpi/bin/dumpi2ascii-callbacks.h:48,
+                 from dumpi2ascii-callbacks.c:45:
+In function ‘fprintf’,
+    inlined from ‘report_Function_enter’ at dumpi2ascii-callbacks.c:2473:3:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:100:10: warning: ‘%s’ directive argument is null [-Wformat-overflow=]
+  100 |   return __fprintf_chk (__stream, __USE_FORTIFY_LEVEL - 1, __fmt,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  101 |    __va_arg_pack ());
+      |    ~~~~~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:100:10: warning: ‘%s’ directive argument is null [-Wformat-overflow=]
+In function ‘fprintf’,
+    inlined from ‘report_Function_exit’ at dumpi2ascii-callbacks.c:2479:3:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:100:10: warning: ‘%s’ directive argument is null [-Wformat-overflow=]
+  100 |   return __fprintf_chk (__stream, __USE_FORTIFY_LEVEL - 1, __fmt,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  101 |    __va_arg_pack ());
+      |    ~~~~~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:100:10: warning: ‘%s’ directive argument is null [-Wformat-overflow=]
+  CCLD     dumpi2dumpi
+  CXXLD    dumpistats
+  CCLD     ascii2dumpi
+  CCLD     dumpi2ascii
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/bin'
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi'
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi'
+make[2]: Leaving directory '/code/submodules/sst-dumpi/dumpi'
+make[1]: Leaving directory '/code/submodules/sst-dumpi/dumpi'
+Making all in tests
+make[1]: Entering directory '/code/submodules/sst-dumpi/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/code/submodules/sst-dumpi/tests'
+make[1]: Entering directory '/code/submodules/sst-dumpi'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/code/submodules/sst-dumpi'
+Making install in dumpi
+make[1]: Entering directory '/code/submodules/sst-dumpi/dumpi'
+Making install in common
+make[2]: Entering directory '/code/submodules/sst-dumpi/dumpi/common'
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/common'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/include/dumpi/common'
+ /usr/bin/install -c -m 644 argtypes.h debugflags.h funclabels.h gettime.h io.h perfctrs.h settings.h constants.h dumpiio.h funcs.h hashmap.h iodefs.h perfctrtags.h types.h byteswap.h '/code/submodules/sst-dumpi/build/include/dumpi/common'
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/common'
+make[2]: Leaving directory '/code/submodules/sst-dumpi/dumpi/common'
+Making install in libdumpi
+make[2]: Entering directory '/code/submodules/sst-dumpi/dumpi/libdumpi'
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/libdumpi'
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libdumpi.la '/code/submodules/sst-dumpi/build/lib'
+libtool: install: /usr/bin/install -c .libs/libdumpi.so.9.0.1 /code/submodules/sst-dumpi/build/lib/libdumpi.so.9.0.1
+libtool: install: (cd /code/submodules/sst-dumpi/build/lib && { ln -s -f libdumpi.so.9.0.1 libdumpi.so.9 || { rm -f libdumpi.so.9 && ln -s libdumpi.so.9.0.1 libdumpi.so.9; }; })
+libtool: install: (cd /code/submodules/sst-dumpi/build/lib && { ln -s -f libdumpi.so.9.0.1 libdumpi.so || { rm -f libdumpi.so && ln -s libdumpi.so.9.0.1 libdumpi.so; }; })
+libtool: install: /usr/bin/install -c .libs/libdumpi.lai /code/submodules/sst-dumpi/build/lib/libdumpi.la
+libtool: install: /usr/bin/install -c .libs/libdumpi.a /code/submodules/sst-dumpi/build/lib/libdumpi.a
+libtool: install: chmod 644 /code/submodules/sst-dumpi/build/lib/libdumpi.a
+libtool: install: ranlib /code/submodules/sst-dumpi/build/lib/libdumpi.a
+libtool: finish: PATH="/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/automake-1.16.3-ea2nzg2c3wlotdbrgiqeqdm6vsolzsfq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/perl-5.34.0-vvuwx7hdykdsr3f4mnsab6tmb3skron5/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/gdbm-1.19-5cd62326gvpnvl47k5jufnbuofqy6xdx/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/readline-8.1-zdltagxkdudkf45hfyg75kbu2ngrdvna/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/bzip2-1.0.8-hj52pvbc4j3ko2y7vecmcbcqh42vnif4/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/berkeley-db-18.1.40-ltawpbufc77xmffvc7i2glk2slwvsycm/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/m4-1.4.19-frghcugj52mwgy6ute5vru2pud2abyta/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/autoconf-2.69-femfkyifjvk36ggfjfjn27no2h66vdpj/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/perl-5.34.0-vvuwx7hdykdsr3f4mnsab6tmb3skron5/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/gdbm-1.19-5cd62326gvpnvl47k5jufnbuofqy6xdx/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/readline-8.1-zdltagxkdudkf45hfyg75kbu2ngrdvna/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/bzip2-1.0.8-hj52pvbc4j3ko2y7vecmcbcqh42vnif4/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/berkeley-db-18.1.40-ltawpbufc77xmffvc7i2glk2slwvsycm/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/m4-1.4.19-frghcugj52mwgy6ute5vru2pud2abyta/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libxml2-2.9.12-ll7cevzogf4q26l6euimdyhom4ed6ibb/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/xz-5.2.5-mz3ybzjb32dgx6l44dewwqjuzx5wj3e2/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libiconv-1.16-foyn4irnemajtujhajlnsio7busrbpj6/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/cmake-3.16.2-eg6cxvrw2nki5scrlvve3optvhhcvqqa/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssl-1.1.1l-tbp36f5asu4sgsdd6zfslzpoxkglwtny/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssh-8.7p1-djpgp4bthzel63mvfhvhjxnfemk4k5cg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/numactl-2.0.14-wyh25uczrls3sm452hkxvotudwr5xqhg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libevent-2.1.12-aobt46gwh7ocrv7fpgsf5c5dyhl55z3p/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssl-1.1.1l-tbp36f5asu4sgsdd6zfslzpoxkglwtny/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/hwloc-2.5.0-pa43zomyztob4gthtc4kgknr5hdfk7m3/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libxml2-2.9.12-ll7cevzogf4q26l6euimdyhom4ed6ibb/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/xz-5.2.5-mz3ybzjb32dgx6l44dewwqjuzx5wj3e2/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libiconv-1.16-foyn4irnemajtujhajlnsio7busrbpj6/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/bzip2-1.0.8-hj52pvbc4j3ko2y7vecmcbcqh42vnif4/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssh-8.7p1-djpgp4bthzel63mvfhvhjxnfemk4k5cg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/numactl-2.0.14-wyh25uczrls3sm452hkxvotudwr5xqhg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libevent-2.1.12-aobt46gwh7ocrv7fpgsf5c5dyhl55z3p/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssl-1.1.1l-tbp36f5asu4sgsdd6zfslzpoxkglwtny/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/hwloc-2.5.0-pa43zomyztob4gthtc4kgknr5hdfk7m3/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libxml2-2.9.12-ll7cevzogf4q26l6euimdyhom4ed6ibb/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/xz-5.2.5-mz3ybzjb32dgx6l44dewwqjuzx5wj3e2/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libiconv-1.16-foyn4irnemajtujhajlnsio7busrbpj6/bin:/root/spack/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /code/submodules/sst-dumpi/build/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /code/submodules/sst-dumpi/build/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/include/dumpi/libdumpi'
+ /usr/bin/install -c -m 644 callprofile-addrset.h callprofile.h data.h fused-bindings.h init.h libdumpi.h mpibindings-maps.h mpibindings.h mpibindings-utils.h '/code/submodules/sst-dumpi/build/include/dumpi/libdumpi'
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/libdumpi'
+make[2]: Leaving directory '/code/submodules/sst-dumpi/dumpi/libdumpi'
+Making install in libundumpi
+make[2]: Entering directory '/code/submodules/sst-dumpi/dumpi/libundumpi'
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/libundumpi'
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libundumpi.la '/code/submodules/sst-dumpi/build/lib'
+libtool: install: /usr/bin/install -c .libs/libundumpi.so.9.0.1 /code/submodules/sst-dumpi/build/lib/libundumpi.so.9.0.1
+libtool: install: (cd /code/submodules/sst-dumpi/build/lib && { ln -s -f libundumpi.so.9.0.1 libundumpi.so.9 || { rm -f libundumpi.so.9 && ln -s libundumpi.so.9.0.1 libundumpi.so.9; }; })
+libtool: install: (cd /code/submodules/sst-dumpi/build/lib && { ln -s -f libundumpi.so.9.0.1 libundumpi.so || { rm -f libundumpi.so && ln -s libundumpi.so.9.0.1 libundumpi.so; }; })
+libtool: install: /usr/bin/install -c .libs/libundumpi.lai /code/submodules/sst-dumpi/build/lib/libundumpi.la
+libtool: install: /usr/bin/install -c .libs/libundumpi.a /code/submodules/sst-dumpi/build/lib/libundumpi.a
+libtool: install: chmod 644 /code/submodules/sst-dumpi/build/lib/libundumpi.a
+libtool: install: ranlib /code/submodules/sst-dumpi/build/lib/libundumpi.a
+libtool: finish: PATH="/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/automake-1.16.3-ea2nzg2c3wlotdbrgiqeqdm6vsolzsfq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/perl-5.34.0-vvuwx7hdykdsr3f4mnsab6tmb3skron5/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/gdbm-1.19-5cd62326gvpnvl47k5jufnbuofqy6xdx/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/readline-8.1-zdltagxkdudkf45hfyg75kbu2ngrdvna/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/bzip2-1.0.8-hj52pvbc4j3ko2y7vecmcbcqh42vnif4/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/berkeley-db-18.1.40-ltawpbufc77xmffvc7i2glk2slwvsycm/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/m4-1.4.19-frghcugj52mwgy6ute5vru2pud2abyta/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/autoconf-2.69-femfkyifjvk36ggfjfjn27no2h66vdpj/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/perl-5.34.0-vvuwx7hdykdsr3f4mnsab6tmb3skron5/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/gdbm-1.19-5cd62326gvpnvl47k5jufnbuofqy6xdx/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/readline-8.1-zdltagxkdudkf45hfyg75kbu2ngrdvna/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/bzip2-1.0.8-hj52pvbc4j3ko2y7vecmcbcqh42vnif4/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/berkeley-db-18.1.40-ltawpbufc77xmffvc7i2glk2slwvsycm/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/m4-1.4.19-frghcugj52mwgy6ute5vru2pud2abyta/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libxml2-2.9.12-ll7cevzogf4q26l6euimdyhom4ed6ibb/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/xz-5.2.5-mz3ybzjb32dgx6l44dewwqjuzx5wj3e2/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libiconv-1.16-foyn4irnemajtujhajlnsio7busrbpj6/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/cmake-3.16.2-eg6cxvrw2nki5scrlvve3optvhhcvqqa/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssl-1.1.1l-tbp36f5asu4sgsdd6zfslzpoxkglwtny/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssh-8.7p1-djpgp4bthzel63mvfhvhjxnfemk4k5cg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/numactl-2.0.14-wyh25uczrls3sm452hkxvotudwr5xqhg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libevent-2.1.12-aobt46gwh7ocrv7fpgsf5c5dyhl55z3p/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssl-1.1.1l-tbp36f5asu4sgsdd6zfslzpoxkglwtny/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/hwloc-2.5.0-pa43zomyztob4gthtc4kgknr5hdfk7m3/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libxml2-2.9.12-ll7cevzogf4q26l6euimdyhom4ed6ibb/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/xz-5.2.5-mz3ybzjb32dgx6l44dewwqjuzx5wj3e2/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libiconv-1.16-foyn4irnemajtujhajlnsio7busrbpj6/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/bzip2-1.0.8-hj52pvbc4j3ko2y7vecmcbcqh42vnif4/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssh-8.7p1-djpgp4bthzel63mvfhvhjxnfemk4k5cg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/numactl-2.0.14-wyh25uczrls3sm452hkxvotudwr5xqhg/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libevent-2.1.12-aobt46gwh7ocrv7fpgsf5c5dyhl55z3p/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openssl-1.1.1l-tbp36f5asu4sgsdd6zfslzpoxkglwtny/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/hwloc-2.5.0-pa43zomyztob4gthtc4kgknr5hdfk7m3/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/ncurses-6.2-b7ho6t54vedhxv5pu6riqw75ohdzyhmq/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libxml2-2.9.12-ll7cevzogf4q26l6euimdyhom4ed6ibb/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/xz-5.2.5-mz3ybzjb32dgx6l44dewwqjuzx5wj3e2/bin:/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/libiconv-1.16-foyn4irnemajtujhajlnsio7busrbpj6/bin:/root/spack/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /code/submodules/sst-dumpi/build/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /code/submodules/sst-dumpi/build/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/include/dumpi/libundumpi'
+ /usr/bin/install -c -m 644 bindings.h callbacks.h dumpistate.h freedefs.h libundumpi.h '/code/submodules/sst-dumpi/build/include/dumpi/libundumpi'
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/libundumpi'
+make[2]: Leaving directory '/code/submodules/sst-dumpi/dumpi/libundumpi'
+Making install in bin
+make[2]: Entering directory '/code/submodules/sst-dumpi/dumpi/bin'
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi/bin'
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/bin'
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c dumpi2ascii dumpi2dumpi dumpistats ascii2dumpi '/code/submodules/sst-dumpi/build/bin'
+libtool: install: /usr/bin/install -c .libs/dumpi2ascii /code/submodules/sst-dumpi/build/bin/dumpi2ascii
+libtool: install: /usr/bin/install -c .libs/dumpi2dumpi /code/submodules/sst-dumpi/build/bin/dumpi2dumpi
+libtool: install: /usr/bin/install -c .libs/dumpistats /code/submodules/sst-dumpi/build/bin/dumpistats
+libtool: install: /usr/bin/install -c .libs/ascii2dumpi /code/submodules/sst-dumpi/build/bin/ascii2dumpi
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi/bin'
+make[2]: Leaving directory '/code/submodules/sst-dumpi/dumpi/bin'
+make[2]: Entering directory '/code/submodules/sst-dumpi/dumpi'
+make[3]: Entering directory '/code/submodules/sst-dumpi/dumpi'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/include/dumpi'
+ /usr/bin/install -c -m 644 dumpiconfig.h '/code/submodules/sst-dumpi/build/include/dumpi'
+ /usr/bin/mkdir -p '/code/submodules/sst-dumpi/build/include/dumpi'
+ /usr/bin/install -c -m 644 dumpiconfig-generated.h '/code/submodules/sst-dumpi/build/include/dumpi'
+make[3]: Leaving directory '/code/submodules/sst-dumpi/dumpi'
+make[2]: Leaving directory '/code/submodules/sst-dumpi/dumpi'
+make[1]: Leaving directory '/code/submodules/sst-dumpi/dumpi'
+Making install in tests
+make[1]: Entering directory '/code/submodules/sst-dumpi/tests'
+make[2]: Entering directory '/code/submodules/sst-dumpi/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/code/submodules/sst-dumpi/tests'
+make[1]: Leaving directory '/code/submodules/sst-dumpi/tests'
+make[1]: Entering directory '/code/submodules/sst-dumpi'
+make[2]: Entering directory '/code/submodules/sst-dumpi'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/code/submodules/sst-dumpi'
+make[1]: Leaving directory '/code/submodules/sst-dumpi'
+
+--------------------
+Done building SST-DUMPI.
+--------------------
+
+
+--------------------
+Building Pluto...
+--------------------
+
+Cloning into 'Pluto'...
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /code/submodules/Pluto/build
+Scanning dependencies of target pluto
+[ 50%] Building CXX object CMakeFiles/pluto.dir/src/pluto.cpp.o
+[100%] Linking CXX shared library libpluto.so
+[100%] Built target pluto
+
+--------------------
+Done building Pluto.
+--------------------
+
+
+--------------------
+Building CSMPI...
+--------------------
+
+
+--------------------
+Done building CSMPI.
+--------------------
+
+
+--------------------
+Building PnMPI...
+--------------------
+
+Cloning into 'PnMPI'...
+Submodule 'externals/CMake-CChelper' (https://github.com/alehaa/CMake-CChelper.git) registered for path 'externals/CMake-CChelper'
+Submodule 'externals/CMake-MPIhelper' (https://github.com/RWTH-HPC/CMake-MPIhelper.git) registered for path 'externals/CMake-MPIhelper'
+Submodule 'externals/CMake-argp' (https://github.com/alehaa/CMake-argp.git) registered for path 'externals/CMake-argp'
+Submodule 'externals/CMake-codecov' (https://github.com/RWTH-HPC/CMake-codecov.git) registered for path 'externals/CMake-codecov'
+Submodule 'externals/CMake-easylib' (https://github.com/alehaa/CMake-easylib.git) registered for path 'externals/CMake-easylib'
+Submodule 'externals/CMake-easytest' (https://github.com/RWTH-HPC/CMake-easytest.git) registered for path 'externals/CMake-easytest'
+Submodule 'externals/CMake-gitinfo' (https://github.com/RWTH-HPC/CMake-gitinfo.git) registered for path 'externals/CMake-gitinfo'
+Submodule 'externals/CMake-gitpack' (https://github.com/RWTH-HPC/CMake-gitpack.git) registered for path 'externals/CMake-gitpack'
+Submodule 'externals/CMake-sanitizers' (https://github.com/arsenm/sanitizers-cmake.git) registered for path 'externals/CMake-sanitizers'
+Submodule 'externals/adept-utils' (https://github.com/llnl/adept-utils.git) registered for path 'externals/adept-utils'
+Submodule 'externals/wrap' (https://github.com/llnl/wrap.git) registered for path 'externals/wrap'
+Cloning into '/code/submodules/PnMPI/externals/CMake-CChelper'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-MPIhelper'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-argp'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-codecov'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-easylib'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-easytest'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-gitinfo'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-gitpack'...
+Cloning into '/code/submodules/PnMPI/externals/CMake-sanitizers'...
+Cloning into '/code/submodules/PnMPI/externals/adept-utils'...
+Cloning into '/code/submodules/PnMPI/externals/wrap'...
+Submodule path 'externals/CMake-CChelper': checked out 'f5670e3b675eb3c11b17291645bd32838bd4d883'
+Submodule path 'externals/CMake-MPIhelper': checked out '0a2a2d0653da0a80de0481fe36ce887140c1e145'
+Submodule path 'externals/CMake-argp': checked out 'e7e77e68d062708edf055f944d3094b0ce0b11b8'
+Submodule path 'externals/CMake-codecov': checked out '59fda9689c5069730f470abf9da2896b4cf4a433'
+Submodule path 'externals/CMake-easylib': checked out 'fb5952ec656eb966181a4349a5a3eb367c8de3db'
+Submodule path 'externals/CMake-easytest': checked out '5494309fb621d18fabfd9a24e6c0739434dcd1a7'
+Submodule path 'externals/CMake-gitinfo': checked out 'ea9bc556a9ca5e05a1b9ede8890156d891729e3b'
+Submodule path 'externals/CMake-gitpack': checked out '1ea1cb457a51839b0917d061d107721b7529981a'
+Submodule path 'externals/CMake-sanitizers': checked out 'f09151bc87ba210f955d58dffc07b0ee1e755234'
+Submodule path 'externals/adept-utils': checked out '0e9c1c71aea6a6a354b3de1196b65b311ceb5ca2'
+Submodule path 'externals/wrap': checked out '20c286659ca09c253a8283bb6ff7c1a9226194f8'
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.25.1") 
+-- Found MPI_C: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc (found version "3.1") 
+-- Found MPI_CXX: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- Try C11 flag = [-std=gnu11]
+-- Performing Test C11_FLAG_DETECTED
+-- Performing Test C11_FLAG_DETECTED - Success
+-- Performing Test C11_ATOMICS_FOUND
+-- Performing Test C11_ATOMICS_FOUND - Success
+-- Performing Test C11_THREAD_LOCAL_FOUND
+-- Performing Test C11_THREAD_LOCAL_FOUND - Success
+-- Found C11: -std=gnu11  found components: ATOMICS THREAD_LOCAL 
+-- Found wrap as submodule.
+-- Found UnixCommands: /usr/bin/bash  
+-- Found PythonInterp: /opt/conda/bin/python (found suitable version "3.8.8", minimum required is "2.6") 
+-- Looking for MPI_Init_thread
+-- Looking for MPI_Init_thread - found
+-- Looking for PMPI_Init_thread
+-- Looking for PMPI_Init_thread - found
+-- Could NOT find HIRES_TIMERS (missing: HIRES_TIMERS_LIBRARY HIRES_TIMERS_INCLUDE_DIR) 
+-- Performing Test HAVE_BUILTIN_RETURN_ADDRESS
+-- Performing Test HAVE_BUILTIN_RETURN_ADDRESS - Success
+-- Found argp: built-in
+-- Could NOT find help2man (missing: HELP2MAN_BIN) 
+-- Try C99 flag = [-std=gnu99]
+-- Performing Test C99_FLAG_DETECTED
+-- Performing Test C99_FLAG_DETECTED - Success
+-- Found C99: -std=gnu99  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /code/submodules/PnMPI/build
+Scanning dependencies of target generate
+Scanning dependencies of target pnmpi_wrapper_pic
+Scanning dependencies of target pnmpi_debug_pmpi
+Scanning dependencies of target pnmpi-patch
+Scanning dependencies of target sample1-non-patched
+Scanning dependencies of target pnmpize
+Scanning dependencies of target pnmpi_wrapper
+[  0%] Generating wrapper_c.c from wrapper_c.c.w
+[  1%] Generating header/pnmpi/xmpi.h from xmpi.h.w
+[  2%] Generating header/pnmpi/private/pmpi.h from pmpi.h.w
+[  3%] Generating wrapper.h from wrapper.h.w
+[  3%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper_pic.dir/mpi_interface.c.o
+[  4%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper_pic.dir/function_address.c.o
+[  5%] Generating header/pnmpi/newstack.h from newstack.h.w
+[  5%] Generating ../header/pnmpi/private/pmpi_assert.h from pmpi_assert.h.w
+[  6%] Building C object src/patch/CMakeFiles/pnmpi-patch.dir/patch.c.o
+[  7%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper_pic.dir/return_address.c.o
+[  7%] Building C object src/modules/sample/CMakeFiles/sample1-non-patched.dir/sample1.c.o
+[  8%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper_pic.dir/mpi_reentry.c.o
+[  9%] Building C object src/pnmpize/CMakeFiles/pnmpize.dir/pnmpize.c.o
+[ 10%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper.dir/mpi_reentry.c.o
+[ 11%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper.dir/mpi_interface.c.o
+[ 12%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper.dir/return_address.c.o
+[ 13%] Building C object src/pnmpi/wrapper/CMakeFiles/pnmpi_wrapper.dir/function_address.c.o
+[ 13%] Built target pnmpi_wrapper_pic
+[ 13%] Built target pnmpi_wrapper
+[ 14%] Linking C executable pnmpi
+[ 15%] Linking C executable pnmpi-patch
+[ 16%] Linking C shared library libsample1-non-patched.so
+[ 16%] Built target pnmpize
+[ 16%] Built target pnmpi-patch
+[ 16%] Built target sample1-non-patched
+[ 16%] Built target pnmpi_debug_pmpi
+Scanning dependencies of target pnmpi_debug
+Scanning dependencies of target pnmpi_debug_pic
+[ 17%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug.dir/print_error.c.o
+[ 18%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug_pic.dir/print_debug.c.o
+[ 18%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug.dir/get_rank.c.o
+[ 19%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug.dir/print_prefix_rank.c.o
+[ 20%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug.dir/print_debug.c.o
+[ 20%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug_pic.dir/get_rank.c.o
+[ 21%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug_pic.dir/print_error.c.o
+[ 23%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug_pic.dir/print_prefix_rank.c.o
+[ 23%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug.dir/print_warning.c.o
+[ 24%] Building C object src/pnmpi/debug/CMakeFiles/pnmpi_debug_pic.dir/print_warning.c.o
+[ 24%] Built target generate
+Scanning dependencies of target pnmpi_modules_pic
+Scanning dependencies of target pnmpi_service_pic
+Scanning dependencies of target pnmpi_modules
+Scanning dependencies of target pnmpi_service
+[ 24%] Built target pnmpi_debug
+[ 24%] Built target pnmpi_debug_pic
+[ 25%] Building C object src/pnmpi/modules/CMakeFiles/pnmpi_modules_pic.dir/call_hook.c.o
+[ 25%] Building C object src/pnmpi/modules/CMakeFiles/pnmpi_modules_pic.dir/unload.c.o
+[ 26%] Building C object src/pnmpi/modules/CMakeFiles/pnmpi_modules_pic.dir/hook_activated.c.o
+[ 26%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/callHook.c.o
+[ 27%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getGlobalByName.c.o
+[ 29%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/changeStack.c.o
+[ 29%] Building C object src/pnmpi/modules/CMakeFiles/pnmpi_modules.dir/call_hook.c.o
+[ 30%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getFunctionAddress.c.o
+[ 31%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getArgument.c.o
+[ 32%] Building C object src/pnmpi/modules/CMakeFiles/pnmpi_modules.dir/hook_activated.c.o
+[ 33%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/changeStack.c.o
+[ 33%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getModuleByName.c.o
+[ 34%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getPcontrol.c.o
+[ 35%] Building C object src/pnmpi/modules/CMakeFiles/pnmpi_modules.dir/unload.c.o
+[ 36%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/callHook.c.o
+[ 37%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getReturnAddress.c.o
+[ 38%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/registerGlobal.c.o
+[ 39%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getFunctionAddress.c.o
+[ 40%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getArgument.c.o
+[ 40%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getGlobalByName.c.o
+[ 41%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getModuleSelf.c.o
+[ 41%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getStackByName.c.o
+[ 42%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/registerModule.c.o
+[ 43%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/getServiceByName.c.o
+[ 44%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getModuleSelf.c.o
+[ 45%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getModuleByName.c.o
+[ 46%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getReturnAddress.c.o
+[ 47%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getPcontrol.c.o
+[ 47%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getServiceByName.c.o
+[ 48%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/getStackByName.c.o
+[ 49%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/registerService.c.o
+[ 50%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service_pic.dir/strerror.c.o
+[ 51%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/strerror.c.o
+[ 52%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/registerGlobal.c.o
+[ 53%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/registerModule.c.o
+[ 54%] Building C object src/pnmpi/service/CMakeFiles/pnmpi_service.dir/registerService.c.o
+[ 54%] Built target pnmpi_modules_pic
+[ 54%] Built target pnmpi_modules
+[ 54%] Built target pnmpi_service_pic
+Scanning dependencies of target pnmpi
+[ 55%] Building C object src/pnmpi/CMakeFiles/pnmpi.dir/initialize.c.o
+[ 56%] Building C object src/pnmpi/CMakeFiles/pnmpi.dir/finalize.c.o
+[ 57%] Building C object src/pnmpi/CMakeFiles/pnmpi.dir/wrapper.c.o
+[ 58%] Building C object src/pnmpi/CMakeFiles/pnmpi.dir/print_banner.c.o
+[ 58%] Building C object src/pnmpi/CMakeFiles/pnmpi.dir/core.c.o
+[ 58%] Built target pnmpi_service
+Scanning dependencies of target pnmpi_static
+[ 59%] Building C object src/pnmpi/CMakeFiles/pnmpi_static.dir/core.c.o
+[ 61%] Building C object src/pnmpi/CMakeFiles/pnmpi_static.dir/force_link.c.o
+[ 61%] Building C object src/pnmpi/CMakeFiles/pnmpi_static.dir/finalize.c.o
+[ 61%] Building C object src/pnmpi/CMakeFiles/pnmpi_static.dir/initialize.c.o
+[ 62%] Building C object src/pnmpi/CMakeFiles/pnmpi_static.dir/print_banner.c.o
+[ 63%] Building C object src/pnmpi/CMakeFiles/pnmpi_static.dir/wrapper.c.o
+In file included from /code/submodules/PnMPI/src/pnmpi/wrapper.c:1387:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Address’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:11755:5: warning: ‘MPI_Address’ is deprecated: MPI_Address was removed in MPI-3.0.  Use MPI_Get_address instead.  continuing... [-Wdeprecated-declarations]
+11755 |     pnmpi_set_function_address(MPI_Address);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:11726:16: note: declared here
+11726 | _EXTERN_C_ int MPI_Address(void *location, MPI_Aint *address) {
+      |                ^~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Attr_delete’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12115:5: warning: ‘MPI_Attr_delete’ is deprecated: MPI_Attr_delete was deprecated in MPI-2.0; use MPI_Comm_delete_attr instead [-Wdeprecated-declarations]
+12115 |     pnmpi_set_function_address(MPI_Attr_delete);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12086:16: note: declared here
+12086 | _EXTERN_C_ int MPI_Attr_delete(MPI_Comm comm, int keyval) {
+      |                ^~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Attr_get’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12160:5: warning: ‘MPI_Attr_get’ is deprecated: MPI_Attr_get was deprecated in MPI-2.0; use MPI_Comm_get_attr instead [-Wdeprecated-declarations]
+12160 |     pnmpi_set_function_address(MPI_Attr_get);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12131:16: note: declared here
+12131 | _EXTERN_C_ int MPI_Attr_get(MPI_Comm comm, int keyval, void *attribute_val, int *flag) {
+      |                ^~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Attr_put’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12205:5: warning: ‘MPI_Attr_put’ is deprecated: MPI_Attr_put was deprecated in MPI-2.0; use MPI_Comm_set_attr instead [-Wdeprecated-declarations]
+12205 |     pnmpi_set_function_address(MPI_Attr_put);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12176:16: note: declared here
+12176 | _EXTERN_C_ int MPI_Attr_put(MPI_Comm comm, int keyval, void *attribute_val) {
+      |                ^~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Errhandler_create’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14725:5: warning: ‘MPI_Errhandler_create’ is deprecated: MPI_Errhandler_create was removed in MPI-3.0.  Use MPI_Comm_create_errhandler instead.  continuing... [-Wdeprecated-declarations]
+14725 |     pnmpi_set_function_address(MPI_Errhandler_create);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14696:16: note: declared here
+14696 | _EXTERN_C_ int MPI_Errhandler_create(MPI_Handler_function *function, MPI_Errhandler *errhandler) {
+      |                ^~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Errhandler_get’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14815:5: warning: ‘MPI_Errhandler_get’ is deprecated: MPI_Errhandler_get was removed in MPI-3.0.  Use MPI_Comm_get_errhandler instead.  continuing... [-Wdeprecated-declarations]
+14815 |     pnmpi_set_function_address(MPI_Errhandler_get);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14786:16: note: declared here
+14786 | _EXTERN_C_ int MPI_Errhandler_get(MPI_Comm comm, MPI_Errhandler *errhandler) {
+      |                ^~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Errhandler_set’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14860:5: warning: ‘MPI_Errhandler_set’ is deprecated: MPI_Errhandler_set was removed in MPI-3.0.  Use MPI_Comm_set_errhandler instead.  continuing... [-Wdeprecated-declarations]
+14860 |     pnmpi_set_function_address(MPI_Errhandler_set);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14831:16: note: declared here
+14831 | _EXTERN_C_ int MPI_Errhandler_set(MPI_Comm comm, MPI_Errhandler errhandler) {
+      |                ^~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Keyval_create’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21160:5: warning: ‘MPI_Keyval_create’ is deprecated: MPI_Keyval_create was deprecated in MPI-2.0; use MPI_Comm_create_keyval instead. [-Wdeprecated-declarations]
+21160 |     pnmpi_set_function_address(MPI_Keyval_create);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21131:16: note: declared here
+21131 | _EXTERN_C_ int MPI_Keyval_create(MPI_Copy_function *copy_fn, MPI_Delete_function *delete_fn, int *keyval, void *extra_state) {
+      |                ^~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Keyval_free’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21205:5: warning: ‘MPI_Keyval_free’ is deprecated: MPI_Keyval_free was deprecated in MPI-2.0; MPI_Comm_free_keyval instead. [-Wdeprecated-declarations]
+21205 |     pnmpi_set_function_address(MPI_Keyval_free);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21176:16: note: declared here
+21176 | _EXTERN_C_ int MPI_Keyval_free(int *keyval) {
+      |                ^~~~~~~~~~~~~~~
+In file included from /code/submodules/PnMPI/src/pnmpi/wrapper.c:1387:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Address’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:11755:5: warning: ‘MPI_Address’ is deprecated: MPI_Address was removed in MPI-3.0.  Use MPI_Get_address instead.  continuing... [-Wdeprecated-declarations]
+11755 |     pnmpi_set_function_address(MPI_Address);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:11726:16: note: declared here
+11726 | _EXTERN_C_ int MPI_Address(void *location, MPI_Aint *address) {
+      |                ^~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Attr_delete’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12115:5: warning: ‘MPI_Attr_delete’ is deprecated: MPI_Attr_delete was deprecated in MPI-2.0; use MPI_Comm_delete_attr instead [-Wdeprecated-declarations]
+12115 |     pnmpi_set_function_address(MPI_Attr_delete);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12086:16: note: declared here
+12086 | _EXTERN_C_ int MPI_Attr_delete(MPI_Comm comm, int keyval) {
+      |                ^~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Attr_get’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12160:5: warning: ‘MPI_Attr_get’ is deprecated: MPI_Attr_get was deprecated in MPI-2.0; use MPI_Comm_get_attr instead [-Wdeprecated-declarations]
+12160 |     pnmpi_set_function_address(MPI_Attr_get);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12131:16: note: declared here
+12131 | _EXTERN_C_ int MPI_Attr_get(MPI_Comm comm, int keyval, void *attribute_val, int *flag) {
+      |                ^~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Attr_put’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12205:5: warning: ‘MPI_Attr_put’ is deprecated: MPI_Attr_put was deprecated in MPI-2.0; use MPI_Comm_set_attr instead [-Wdeprecated-declarations]
+12205 |     pnmpi_set_function_address(MPI_Attr_put);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:12176:16: note: declared here
+12176 | _EXTERN_C_ int MPI_Attr_put(MPI_Comm comm, int keyval, void *attribute_val) {
+      |                ^~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_extent’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24445:5: warning: ‘MPI_Type_extent’ is deprecated: MPI_Type_extent was removed in MPI-3.0.  Use MPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+24445 |     pnmpi_set_function_address(MPI_Type_extent);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24416:16: note: declared here
+24416 | _EXTERN_C_ int MPI_Type_extent(MPI_Datatype type, MPI_Aint *extent) {
+      |                ^~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_hindexed’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24940:5: warning: ‘MPI_Type_hindexed’ is deprecated: MPI_Type_hindexed was removed in MPI-3.0.  Use MPI_Type_create_hindexed instead.  continuing... [-Wdeprecated-declarations]
+24940 |     pnmpi_set_function_address(MPI_Type_hindexed);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24911:16: note: declared here
+24911 | _EXTERN_C_ int MPI_Type_hindexed(int count, int array_of_blocklengths[], MPI_Aint array_of_displacements[], MPI_Datatype oldtype, MPI_Datatype *newtype) {
+      |                ^~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_hvector’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24985:5: warning: ‘MPI_Type_hvector’ is deprecated: MPI_Type_hvector was removed in MPI-3.0.  Use MPI_Type_create_hvector instead.  continuing... [-Wdeprecated-declarations]
+24985 |     pnmpi_set_function_address(MPI_Type_hvector);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24956:16: note: declared here
+24956 | _EXTERN_C_ int MPI_Type_hvector(int count, int blocklength, MPI_Aint stride, MPI_Datatype oldtype, MPI_Datatype *newtype) {
+      |                ^~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_lb’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25075:5: warning: ‘MPI_Type_lb’ is deprecated: MPI_Type_lb was removed in MPI-3.0.  Use MPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+25075 |     pnmpi_set_function_address(MPI_Type_lb);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25046:16: note: declared here
+25046 | _EXTERN_C_ int MPI_Type_lb(MPI_Datatype type, MPI_Aint *lb) {
+      |                ^~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_struct’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25345:5: warning: ‘MPI_Type_struct’ is deprecated: MPI_Type_struct was removed in MPI-3.0.  Use MPI_Type_create_struct instead.  continuing... [-Wdeprecated-declarations]
+25345 |     pnmpi_set_function_address(MPI_Type_struct);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Errhandler_create’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14725:5: warning: ‘MPI_Errhandler_create’ is deprecated: MPI_Errhandler_create was removed in MPI-3.0.  Use MPI_Comm_create_errhandler instead.  continuing... [-Wdeprecated-declarations]
+14725 |     pnmpi_set_function_address(MPI_Errhandler_create);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14696:16: note: declared here
+14696 | _EXTERN_C_ int MPI_Errhandler_create(MPI_Handler_function *function, MPI_Errhandler *errhandler) {
+      |                ^~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25316:16: note: declared here
+25316 | _EXTERN_C_ int MPI_Type_struct(int count, int array_of_blocklengths[], MPI_Aint array_of_displacements[], MPI_Datatype array_of_types[], MPI_Datatype *newtype) {
+      |                ^~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Errhandler_get’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_ub’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14815:5: warning: ‘MPI_Errhandler_get’ is deprecated: MPI_Errhandler_get was removed in MPI-3.0.  Use MPI_Comm_get_errhandler instead.  continuing... [-Wdeprecated-declarations]
+14815 |     pnmpi_set_function_address(MPI_Errhandler_get);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14786:16: note: declared here
+14786 | _EXTERN_C_ int MPI_Errhandler_get(MPI_Comm comm, MPI_Errhandler *errhandler) {
+      |                ^~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25390:5: warning: ‘MPI_Type_ub’ is deprecated: MPI_Type_ub was removed in MPI-3.0.  Use MPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+25390 |     pnmpi_set_function_address(MPI_Type_ub);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Errhandler_set’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14860:5: warning: ‘MPI_Errhandler_set’ is deprecated: MPI_Errhandler_set was removed in MPI-3.0.  Use MPI_Comm_set_errhandler instead.  continuing... [-Wdeprecated-declarations]
+14860 |     pnmpi_set_function_address(MPI_Errhandler_set);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:14831:16: note: declared here
+14831 | _EXTERN_C_ int MPI_Errhandler_set(MPI_Comm comm, MPI_Errhandler errhandler) {
+      |                ^~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25361:16: note: declared here
+25361 | _EXTERN_C_ int MPI_Type_ub(MPI_Datatype mtype, MPI_Aint *ub) {
+      |                ^~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Keyval_create’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21160:5: warning: ‘MPI_Keyval_create’ is deprecated: MPI_Keyval_create was deprecated in MPI-2.0; use MPI_Comm_create_keyval instead. [-Wdeprecated-declarations]
+21160 |     pnmpi_set_function_address(MPI_Keyval_create);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21131:16: note: declared here
+21131 | _EXTERN_C_ int MPI_Keyval_create(MPI_Copy_function *copy_fn, MPI_Delete_function *delete_fn, int *keyval, void *extra_state) {
+      |                ^~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Keyval_free’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21205:5: warning: ‘MPI_Keyval_free’ is deprecated: MPI_Keyval_free was deprecated in MPI-2.0; MPI_Comm_free_keyval instead. [-Wdeprecated-declarations]
+21205 |     pnmpi_set_function_address(MPI_Keyval_free);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:21176:16: note: declared here
+21176 | _EXTERN_C_ int MPI_Keyval_free(int *keyval) {
+      |                ^~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_extent’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24445:5: warning: ‘MPI_Type_extent’ is deprecated: MPI_Type_extent was removed in MPI-3.0.  Use MPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+24445 |     pnmpi_set_function_address(MPI_Type_extent);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24416:16: note: declared here
+24416 | _EXTERN_C_ int MPI_Type_extent(MPI_Datatype type, MPI_Aint *extent) {
+      |                ^~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_hindexed’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24940:5: warning: ‘MPI_Type_hindexed’ is deprecated: MPI_Type_hindexed was removed in MPI-3.0.  Use MPI_Type_create_hindexed instead.  continuing... [-Wdeprecated-declarations]
+24940 |     pnmpi_set_function_address(MPI_Type_hindexed);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24911:16: note: declared here
+24911 | _EXTERN_C_ int MPI_Type_hindexed(int count, int array_of_blocklengths[], MPI_Aint array_of_displacements[], MPI_Datatype oldtype, MPI_Datatype *newtype) {
+      |                ^~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_hvector’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24985:5: warning: ‘MPI_Type_hvector’ is deprecated: MPI_Type_hvector was removed in MPI-3.0.  Use MPI_Type_create_hvector instead.  continuing... [-Wdeprecated-declarations]
+24985 |     pnmpi_set_function_address(MPI_Type_hvector);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:24956:16: note: declared here
+24956 | _EXTERN_C_ int MPI_Type_hvector(int count, int blocklength, MPI_Aint stride, MPI_Datatype oldtype, MPI_Datatype *newtype) {
+      |                ^~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_lb’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25075:5: warning: ‘MPI_Type_lb’ is deprecated: MPI_Type_lb was removed in MPI-3.0.  Use MPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+25075 |     pnmpi_set_function_address(MPI_Type_lb);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25046:16: note: declared here
+25046 | _EXTERN_C_ int MPI_Type_lb(MPI_Datatype type, MPI_Aint *lb) {
+      |                ^~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_struct’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25345:5: warning: ‘MPI_Type_struct’ is deprecated: MPI_Type_struct was removed in MPI-3.0.  Use MPI_Type_create_struct instead.  continuing... [-Wdeprecated-declarations]
+25345 |     pnmpi_set_function_address(MPI_Type_struct);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25316:16: note: declared here
+25316 | _EXTERN_C_ int MPI_Type_struct(int count, int array_of_blocklengths[], MPI_Aint array_of_displacements[], MPI_Datatype array_of_types[], MPI_Datatype *newtype) {
+      |                ^~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c: In function ‘MPI_Type_ub’:
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25390:5: warning: ‘MPI_Type_ub’ is deprecated: MPI_Type_ub was removed in MPI-3.0.  Use MPI_Type_get_extent instead.  continuing... [-Wdeprecated-declarations]
+25390 |     pnmpi_set_function_address(MPI_Type_ub);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/build/src/pnmpi/wrapper_c.c:25361:16: note: declared here
+25361 | _EXTERN_C_ int MPI_Type_ub(MPI_Datatype mtype, MPI_Aint *ub) {
+      |                ^~~~~~~~~~~
+[ 63%] Linking C static library libpnmpi.a
+[ 63%] Built target pnmpi_static
+[ 64%] Linking C shared library libpnmpi.so
+[ 64%] Built target pnmpi
+Scanning dependencies of target dtprint
+[ 64%] Generating empty.c from empty.w
+Scanning dependencies of target commsub-empty
+[ 65%] Generating counter.c from counter.c.w
+Scanning dependencies of target commsub-print
+Scanning dependencies of target requests
+Scanning dependencies of target sample1f
+Scanning dependencies of target sample1
+Scanning dependencies of target datatype
+Scanning dependencies of target limit-threading
+Scanning dependencies of target sample2
+Scanning dependencies of target sample3
+Scanning dependencies of target status
+Scanning dependencies of target sample4
+[ 66%] Generating switch-matrix.c from switch-matrix.w
+[ 67%] Generating virtual.c from virtual.w
+Scanning dependencies of target timelapse
+Scanning dependencies of target wait-for-debugger
+[ 67%] Building CXX object src/modules/comm/CMakeFiles/commsub-empty.dir/commsub-empty.cpp.o
+[ 68%] Building CXX object src/modules/datatype/CMakeFiles/datatype.dir/datatype.cpp.o
+[ 70%] Building C object src/modules/limit-threading/CMakeFiles/limit-threading.dir/limit-threading.c.o
+[ 69%] Building C object src/modules/sample/CMakeFiles/sample1f.dir/sample1f.c.o
+[ 71%] Building C object src/modules/sample/CMakeFiles/sample1.dir/sample1.c.o
+[ 72%] Building C object src/modules/comm/CMakeFiles/commsub-print.dir/comm.c.o
+[ 73%] Building C object src/modules/datatype/CMakeFiles/dtprint.dir/dtprint.c.o
+[ 74%] Building C object src/modules/comm/CMakeFiles/commsub-empty.dir/comm.c.o
+[ 75%] Building CXX object src/modules/requests/CMakeFiles/requests.dir/requests.cpp.o
+[ 76%] Building C object src/modules/sample/CMakeFiles/sample4.dir/sample4.c.o
+[ 77%] Building C object src/modules/sample/CMakeFiles/sample2.dir/sample2.c.o
+[ 78%] Building CXX object src/modules/comm/CMakeFiles/commsub-print.dir/commsub-print.cpp.o
+[ 79%] Building C object src/modules/sample/CMakeFiles/sample3.dir/sample3.c.o
+[ 80%] Building C object src/modules/timelapse/CMakeFiles/timelapse.dir/timelapse.c.o
+[ 81%] Building C object src/modules/status/CMakeFiles/status.dir/status.c.o
+[ 82%] Building C object src/modules/wait-for-debugger/CMakeFiles/wait-for-debugger.dir/wait-for-debugger.c.o
+[ 83%] Linking C shared module sample1f.so
+[ 83%] Linking C shared module timelapse.so
+[ 83%] Linking C shared module sample2.so
+[ 84%] Linking C shared module limit-threading.so
+[ 85%] Linking C shared module sample4.so
+[ 86%] Linking C shared module sample3.so
+[ 87%] Linking C shared module sample1.so
+[ 88%] Linking C shared module wait-for-debugger.so
+[ 89%] Linking C shared module dtprint.so
+[ 89%] Linking C shared module status.so
+Scanning dependencies of target empty
+Patching sample1f
+Scanning dependencies of target virtual
+Patching sample4
+Patching sample2
+[ 89%] Built target limit-threading
+Scanning dependencies of target switch-matrix
+Patching sample1
+Patching sample3
+[ 89%] Built target timelapse
+[ 90%] Building C object src/modules/empty/CMakeFiles/empty.dir/empty.c.o
+[ 91%] Building C object src/modules/virtual/CMakeFiles/virtual.dir/virtual.c.o
+Patched 4 dynamic symbols.
+Patched 0 generic symbols.
+[ 91%] Built target wait-for-debugger
+Patched 4 dynamic symbols.
+Patched 0 generic symbols.
+Patched 2 dynamic symbols.
+Patched 0 generic symbols.
+Scanning dependencies of target metrics-counter
+[ 92%] Building C object src/modules/switch-matrix/CMakeFiles/switch-matrix.dir/switch-matrix.c.o
+[ 92%] Linking CXX shared module commsub-print.so
+Patched 4 dynamic symbols.
+Patched 0 generic symbols.
+Patched 2 dynamic symbols.
+Patched 0 generic symbols.
+[ 93%] Linking CXX shared module commsub-empty.so
+[ 93%] Built target sample1f
+[ 93%] Built target sample4
+[ 93%] Building C object src/modules/metrics/CMakeFiles/metrics-counter.dir/counter.c.o
+Patching dtprint
+[ 93%] Built target sample2
+[ 93%] Built target sample1
+[ 93%] Built target sample3
+Patching status
+Patched 6 dynamic symbols.
+Patched 0 generic symbols.
+Patched 34 dynamic symbols.
+Patched 0 generic symbols.
+[ 93%] Built target dtprint
+[ 93%] Built target status
+Patching commsub-empty
+Patching commsub-print
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp: In function ‘int MPI_Type_hvector(int, int, MPI_Aint, MPI_Datatype, ompi_datatype_t**)’:
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp:1055:65: warning: ‘int PMPI_Type_hvector(int, int, MPI_Aint, MPI_Datatype, ompi_datatype_t**)’ is deprecated: PMPI_Type_hvector was removed in MPI-3.0.  Use PMPI_Type_create_hvector instead.  continuing... [-Wdeprecated-declarations]
+ 1055 |   ret = PMPI_Type_hvector(count, blocklen, stride, in_dt, out_dt);
+      |                                                                 ^
+In file included from /code/submodules/PnMPI/src/modules/datatype/datatype.h:35,
+                 from /code/submodules/PnMPI/src/modules/datatype/datatype.cpp:31:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2837:20: note: declared here
+ 2837 | OMPI_DECLSPEC  int PMPI_Type_hvector(int count, int blocklength, MPI_Aint stride,
+      |                    ^~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp:1055:65: warning: ‘int PMPI_Type_hvector(int, int, MPI_Aint, MPI_Datatype, ompi_datatype_t**)’ is deprecated: PMPI_Type_hvector was removed in MPI-3.0.  Use PMPI_Type_create_hvector instead.  continuing... [-Wdeprecated-declarations]
+ 1055 |   ret = PMPI_Type_hvector(count, blocklen, stride, in_dt, out_dt);
+      |                                                                 ^
+In file included from /code/submodules/PnMPI/src/modules/datatype/datatype.h:35,
+                 from /code/submodules/PnMPI/src/modules/datatype/datatype.cpp:31:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2837:20: note: declared here
+ 2837 | OMPI_DECLSPEC  int PMPI_Type_hvector(int count, int blocklength, MPI_Aint stride,
+      |                    ^~~~~~~~~~~~~~~~~
+Patched 80 dynamic symbols.
+Patched 0 generic symbols.
+Patched 80 dynamic symbols.
+Patched 0 generic symbols.
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp: In function ‘int MPI_Type_hindexed(int, int*, MPI_Aint*, MPI_Datatype, ompi_datatype_t**)’:
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp:1189:68: warning: ‘int PMPI_Type_hindexed(int, int*, MPI_Aint*, MPI_Datatype, ompi_datatype_t**)’ is deprecated: PMPI_Type_hindexed was removed in MPI-3.0.  Use PMPI_Type_create_hindexed instead.  continuing... [-Wdeprecated-declarations]
+ 1189 |   ret = PMPI_Type_hindexed(count, blocklens, indices, in_dt, out_dt);
+      |                                                                    ^
+In file included from /code/submodules/PnMPI/src/modules/datatype/datatype.h:35,
+                 from /code/submodules/PnMPI/src/modules/datatype/datatype.cpp:31:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2830:20: note: declared here
+ 2830 | OMPI_DECLSPEC  int PMPI_Type_hindexed(int count, int array_of_blocklengths[],
+      |                    ^~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp:1189:68: warning: ‘int PMPI_Type_hindexed(int, int*, MPI_Aint*, MPI_Datatype, ompi_datatype_t**)’ is deprecated: PMPI_Type_hindexed was removed in MPI-3.0.  Use PMPI_Type_create_hindexed instead.  continuing... [-Wdeprecated-declarations]
+ 1189 |   ret = PMPI_Type_hindexed(count, blocklens, indices, in_dt, out_dt);
+      |                                                                    ^
+In file included from /code/submodules/PnMPI/src/modules/datatype/datatype.h:35,
+                 from /code/submodules/PnMPI/src/modules/datatype/datatype.cpp:31:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2830:20: note: declared here
+ 2830 | OMPI_DECLSPEC  int PMPI_Type_hindexed(int count, int array_of_blocklengths[],
+      |                    ^~~~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp: In function ‘int MPI_Type_struct(int, int*, MPI_Aint*, ompi_datatype_t**, ompi_datatype_t**)’:
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp:1279:67: warning: ‘int PMPI_Type_struct(int, int*, MPI_Aint*, ompi_datatype_t**, ompi_datatype_t**)’ is deprecated: PMPI_Type_struct was removed in MPI-3.0.  Use PMPI_Type_create_struct instead.  continuing... [-Wdeprecated-declarations]
+ 1279 |   ret = PMPI_Type_struct(count, blocklens, indices, in_dts, out_dt);
+      |                                                                   ^
+In file included from /code/submodules/PnMPI/src/modules/datatype/datatype.h:35,
+                 from /code/submodules/PnMPI/src/modules/datatype/datatype.cpp:31:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2849:20: note: declared here
+ 2849 | OMPI_DECLSPEC  int PMPI_Type_struct(int count, int array_of_blocklengths[],
+      |                    ^~~~~~~~~~~~~~~~
+/code/submodules/PnMPI/src/modules/datatype/datatype.cpp:1279:67: warning: ‘int PMPI_Type_struct(int, int*, MPI_Aint*, ompi_datatype_t**, ompi_datatype_t**)’ is deprecated: PMPI_Type_struct was removed in MPI-3.0.  Use PMPI_Type_create_struct instead.  continuing... [-Wdeprecated-declarations]
+ 1279 |   ret = PMPI_Type_struct(count, blocklens, indices, in_dts, out_dt);
+      |                                                                   ^
+In file included from /code/submodules/PnMPI/src/modules/datatype/datatype.h:35,
+                 from /code/submodules/PnMPI/src/modules/datatype/datatype.cpp:31:
+/root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/include/mpi.h:2849:20: note: declared here
+ 2849 | OMPI_DECLSPEC  int PMPI_Type_struct(int count, int array_of_blocklengths[],
+      |                    ^~~~~~~~~~~~~~~~
+[ 93%] Built target commsub-empty
+[ 93%] Built target commsub-print
+[ 94%] Linking C shared module virtual.so
+Patching virtual
+Patched 254 dynamic symbols.
+Patched 0 generic symbols.
+[ 94%] Built target virtual
+[ 95%] Linking C shared module empty.so
+Patching empty
+Patched 718 dynamic symbols.
+Patched 0 generic symbols.
+[ 95%] Built target empty
+[ 96%] Linking CXX shared module requests.so
+[ 97%] Linking CXX shared module datatype.so
+[ 98%] Linking C shared module switch-matrix.so
+Patching requests
+Patching switch-matrix
+Patched 48 dynamic symbols.
+Patched 0 generic symbols.
+Patched 724 dynamic symbols.
+Patched 0 generic symbols.
+[ 98%] Built target requests
+[ 98%] Built target switch-matrix
+Patching datatype
+Patched 26 dynamic symbols.
+Patched 0 generic symbols.
+[ 98%] Built target datatype
+[100%] Linking C shared module metrics-counter.so
+[100%] Built target metrics-counter
+[  3%] Built target pnmpi_wrapper_pic
+[  7%] Built target generate
+[  7%] Built target pnmpi_debug_pmpi
+[ 11%] Built target pnmpi_debug_pic
+[ 13%] Built target pnmpi_modules_pic
+[ 25%] Built target pnmpi_service_pic
+[ 30%] Built target pnmpi
+[ 32%] Built target pnmpi-patch
+[ 34%] Built target commsub-empty
+[ 36%] Built target commsub-print
+[ 38%] Built target dtprint
+[ 40%] Built target datatype
+[ 42%] Built target empty
+[ 44%] Built target limit-threading
+[ 46%] Built target metrics-counter
+[ 48%] Built target requests
+[ 50%] Built target sample1
+[ 52%] Built target sample3
+[ 54%] Built target sample1f
+[ 55%] Built target sample2
+[ 56%] Built target sample1-non-patched
+[ 58%] Built target sample4
+[ 59%] Built target status
+[ 62%] Built target switch-matrix
+[ 63%] Built target timelapse
+[ 66%] Built target virtual
+[ 68%] Built target wait-for-debugger
+[ 72%] Built target pnmpi_wrapper
+[ 76%] Built target pnmpi_debug
+[ 79%] Built target pnmpi_modules
+[ 92%] Built target pnmpi_service
+[ 97%] Built target pnmpi_static
+[100%] Built target pnmpize
+Install the project...
+-- Install configuration: ""
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/PnMPIConfigVersion.cmake
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/PnMPIConfig.cmake
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/PnMPI_modules.cmake
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi-config.h
+-- Installing: /code/submodules/PnMPI/build/bin/wrap.py
+-- Installing: /code/submodules/PnMPI/build/share/cmake/wrap/wrap-config.cmake
+-- Installing: /code/submodules/PnMPI/build/src/wrap/getStatusSize.f
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/commsub-print.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/commsub-empty.so
+-- Installing: /code/submodules/PnMPI/build/include/datatype.h
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/datatype.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/dtprint.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/empty.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/limit-threading.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/metrics-counter.so
+-- Installing: /code/submodules/PnMPI/build/include/requests.h
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/requests.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/sample1.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/sample2.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/sample3.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/sample4.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/sample1f.so
+-- Installing: /code/submodules/PnMPI/build/include/status.h
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/status.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/switch-matrix.so
+-- Installing: /code/submodules/PnMPI/build/include/timelapse.h
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/timelapse.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/virtual.so
+-- Installing: /code/submodules/PnMPI/build/lib/pnmpi-modules/wait-for-debugger.so
+-- Installing: /code/submodules/PnMPI/build/bin/pnmpi-patch
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/pnmpi-patch.cmake
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/pnmpi-patch-noconfig.cmake
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi/newstack.h
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi/xmpi.h
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi.h
+-- Installing: /code/submodules/PnMPI/build/include/pnmpimod.h
+-- Installing: /code/submodules/PnMPI/build/lib/libpnmpi.a
+-- Installing: /code/submodules/PnMPI/build/lib/libpnmpi.so.1.9.0
+-- Installing: /code/submodules/PnMPI/build/lib/libpnmpi.so.1
+-- Installing: /code/submodules/PnMPI/build/lib/libpnmpi.so
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/pnmpi-libs.cmake
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/pnmpi-libs-noconfig.cmake
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi/attributes.h
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi/debug_io.h
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi/const.h
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi/hooks.h
+-- Installing: /code/submodules/PnMPI/build/include/pnmpi/service.h
+-- Installing: /code/submodules/PnMPI/build/bin/pnmpi
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/pnmpize.cmake
+-- Installing: /code/submodules/PnMPI/build/share/cmake/PnMPI/pnmpize-noconfig.cmake
+
+--------------------
+Done building PnMPI.
+--------------------
+
+
+--------------------
+Patching tracing libraries for use with PnMPI...
+--------------------
+
+Patched 846 dynamic symbols.
+Patched 0 generic symbols.
+Patched 26 dynamic symbols.
+Patched 0 generic symbols.
+
+--------------------
+Done patching tracing libraries for use with PnMPI...
+--------------------
+
+
+--------------------
+Building graph constructor...
+--------------------
+
+Cloning into 'dumpi_to_graph'...
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Boost 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/Boost-1.70.0
+--   Requested configuration: QUIET REQUIRED COMPONENTS mpi;serialization
+-- Found boost_headers 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/boost_headers-1.70.0
+-- Found boost_mpi 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/boost_mpi-1.70.0
+--   libboost_mpi.a
+-- Adding boost_mpi dependencies: serialization;headers
+-- Found boost_serialization 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/boost_serialization-1.70.0
+--   libboost_serialization.a
+-- Adding boost_serialization dependencies: headers
+-- Found Boost: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/Boost-1.70.0/BoostConfig.cmake (found suitable version "1.70.0", minimum required is "1.69.0") found components: mpi serialization 
+-- Found PkgConfig: /opt/conda/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'igraph'
+--   Found igraph, version 0.7.1
+-- Found igraph 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /code/submodules/dumpi_to_graph/build
+Scanning dependencies of target dumpi_to_graph
+[  4%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/blocking_collective_callbacks.cpp.o
+[ 13%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/CSMPI_Callstack.cpp.o
+[ 13%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/Channel.cpp.o
+[ 18%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/CommunicatorManager.cpp.o
+[ 22%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/Debug.cpp.o
+[ 27%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/Glob.cpp.o
+[ 31%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/EventGraph.cpp.o
+[ 36%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/matching_function_callbacks.cpp.o
+[ 40%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/Request.cpp.o
+[ 45%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/Utilities.cpp.o
+[ 50%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/Trace.cpp.o
+[ 54%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/blocking_p2p_callbacks.cpp.o
+[ 59%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/communicator_management_callbacks.cpp.o
+[ 63%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/CSMPI_Trace.cpp.o
+[ 68%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/Configuration.cpp.o
+[ 72%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/dumpi_to_graph.cpp.o
+[ 77%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/finalize_callbacks.cpp.o
+[ 81%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/init_callbacks.cpp.o
+[ 86%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/nonblocking_p2p_callbacks.cpp.o
+[ 90%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/request_mutating_callbacks.cpp.o
+[ 95%] Building CXX object CMakeFiles/dumpi_to_graph.dir/src/undumpi_callbacks.cpp.o
+[100%] Linking CXX executable dumpi_to_graph
+[100%] Built target dumpi_to_graph
+
+--------------------
+Done building graph constructor.
+--------------------
+
+
+--------------------
+Building Comm Pattern Generator...
+--------------------
+
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc
+-- Check for working C compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx
+-- Check for working CXX compiler: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/openmpi-4.1.1-qyqzpl2bhxejsplsvpfjbeyjbagbi6th/bin/mpicxx -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Boost 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/Boost-1.70.0
+--   Requested configuration: QUIET REQUIRED COMPONENTS mpi;serialization
+-- Found boost_headers 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/boost_headers-1.70.0
+-- Found boost_mpi 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/boost_mpi-1.70.0
+--   libboost_mpi.a
+-- Adding boost_mpi dependencies: serialization;headers
+-- Found boost_serialization 1.70.0 at /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/boost_serialization-1.70.0
+--   libboost_serialization.a
+-- Adding boost_serialization dependencies: headers
+-- Found Boost: /root/spack/opt/spack/linux-ubuntu20.04-skylake_avx512/gcc-9.3.0/boost-1.70.0-pzrfcjvs5oqwyus5kg5vcj4uylln3uqk/lib/cmake/Boost-1.70.0/BoostConfig.cmake (found suitable version "1.70.0", minimum required is "1.69.0") found components: mpi serialization 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /code/apps/comm_pattern_generator/build
+Scanning dependencies of target comm_pattern_generator
+[ 14%] Building CXX object CMakeFiles/comm_pattern_generator.dir/src/driver.cpp.o
+[ 28%] Building CXX object CMakeFiles/comm_pattern_generator.dir/src/configuration.cpp.o
+[ 42%] Building CXX object CMakeFiles/comm_pattern_generator.dir/src/amg2013.cpp.o
+[ 57%] Building CXX object CMakeFiles/comm_pattern_generator.dir/src/comm_pattern.cpp.o
+[ 71%] Building CXX object CMakeFiles/comm_pattern_generator.dir/src/naive_reduce.cpp.o
+[ 85%] Building CXX object CMakeFiles/comm_pattern_generator.dir/src/unstructured_mesh.cpp.o
+[100%] Linking CXX executable comm_pattern_generator
+[100%] Built target comm_pattern_generator
+
+--------------------
+Done Building Comm Pattern Generator.
+--------------------
+
+Warning: the Unstructured Mesh grid size has been set. These values will not be used for the selected communication pattern - message_race
+Warning: the Unstructured Mesh topological non-determinism percentage has been set.  This value will not be used for the selected commnication pattern - message_race
+Communication Pattern: message_race
+Scheduler Selected: unscheduled
+Number of Processes: 16
+Number of Iterations: 10
+Message Size: 1
+Number of Nodes: 1
+Starting Non-determinism Percentage: 0.0
+Non-determinism Percentage Step Size: 0.1
+Ending Non-determinism Percentage: 1.0
+Queue for Running Scheduled Jobs: normal
+Time Limit for Running Scheduled Jobs: 10
+Number of Execution Runs: 100
+Output will be stored in /code/../results//message_race_results
+Submitting jobs for run 000 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 001 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 002 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 003 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 004 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 005 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 006 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 007 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 008 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 009 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 010 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 011 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 012 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 013 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 014 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 015 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 016 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 017 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 018 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 019 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 020 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 021 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 022 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 023 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 024 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 025 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 026 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 027 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 028 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 029 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 030 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 031 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 032 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 033 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 034 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 035 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 036 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 037 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 038 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 039 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 040 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 041 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 042 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 043 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 044 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 045 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 046 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 047 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 048 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 049 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 050 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 051 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 052 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 053 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 054 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 055 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 056 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 057 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 058 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 059 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 060 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 061 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 062 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 063 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 064 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 065 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 066 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 067 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 068 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 069 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 070 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 071 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 072 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 073 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 074 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 075 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 076 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 077 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 078 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 079 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 080 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 081 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 082 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 083 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 084 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 085 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 086 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 087 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 088 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 089 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 090 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 091 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 092 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 093 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 094 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 095 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 096 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 097 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 098 of the message_race communication pattern on scheduler=unscheduled
+Submitting jobs for run 099 of the message_race communication pattern on scheduler=unscheduled
+Submitting job to compute KDTS data for message_race communication pattern with 100 runs on scheduler=unscheduled
+Your kernel distance data will be stored in output file: /code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0/kdts.pkl
+Used the communication pattern type:                     message_race
+Used graph kernel JSON file:                             /root/capsule/code/anacin-x/event_graph_analysis/graph_kernel_policies/wlst_5iters_logical_timestamp_label.json
+Starting non-determinism percentage:                     0.0
+Non-determinism percentage step size:                    0.1
+Ending non-determinism percentage:                       1.0
+Your Pearson's r value     = 0.84
+
+It's corresponding p value = 0.0
+
+
+
+Your Spearman's ρ value    = 0.85
+
+It's corresponding p value = 0.0
+
+Warning: the Unstructured Mesh grid size has been set. These values will not be used for the selected communication pattern - amg2013
+Warning: the Unstructured Mesh topological non-determinism percentage has been set.  This value will not be used for the selected commnication pattern - amg2013
+Communication Pattern: amg2013
+Scheduler Selected: unscheduled
+Number of Processes: 16
+Number of Iterations: 10
+Message Size: 1
+Number of Nodes: 1
+Starting Non-determinism Percentage: 0.0
+Non-determinism Percentage Step Size: 0.1
+Ending Non-determinism Percentage: 1.0
+Queue for Running Scheduled Jobs: normal
+Time Limit for Running Scheduled Jobs: 10
+Number of Execution Runs: 100
+Output will be stored in /code/../results//amg2013_results
+Submitting jobs for run 000 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 001 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 002 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 003 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 004 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 005 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 006 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 007 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 008 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 009 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 010 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 011 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 012 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 013 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 014 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 015 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 016 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 017 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 018 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 019 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 020 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 021 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 022 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 023 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 024 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 025 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 026 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 027 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 028 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 029 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 030 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 031 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 032 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 033 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 034 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 035 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 036 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 037 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 038 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 039 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 040 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 041 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 042 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 043 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 044 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 045 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 046 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 047 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 048 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 049 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 050 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 051 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 052 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 053 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 054 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 055 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 056 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 057 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 058 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 059 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 060 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 061 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 062 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 063 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 064 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 065 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 066 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 067 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 068 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 069 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 070 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 071 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 072 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 073 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 074 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 075 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 076 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 077 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 078 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 079 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 080 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 081 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 082 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 083 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 084 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 085 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 086 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 087 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 088 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 089 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 090 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 091 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 092 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 093 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 094 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 095 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 096 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 097 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 098 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting jobs for run 099 of the amg2013 communication pattern on scheduler=unscheduled
+Submitting job to compute KDTS data for amg2013 communication pattern with 100 runs on scheduler=unscheduled
+Your kernel distance data will be stored in output file: /code/../results//amg2013_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0/kdts.pkl
+Used the communication pattern type:                     amg2013
+Used graph kernel JSON file:                             /root/capsule/code/anacin-x/event_graph_analysis/graph_kernel_policies/wlst_5iters_logical_timestamp_label.json
+Starting non-determinism percentage:                     0.0
+Non-determinism percentage step size:                    0.1
+Ending non-determinism percentage:                       1.0
+Your Pearson's r value     = 0.93
+
+It's corresponding p value = 0.0
+
+
+
+Your Spearman's ρ value    = 0.99
+
+It's corresponding p value = 0.0
+

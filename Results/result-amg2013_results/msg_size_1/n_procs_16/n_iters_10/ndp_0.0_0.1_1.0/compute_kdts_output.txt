@@ -1,0 +1,66 @@
+Rank: 2, Assigned Slices: [2]
+Ingesting subgraphs for slice: 2
+Rank: 3, Assigned Slices: [3]
+Ingesting subgraphs for slice: 3
+Rank: 9, Assigned Slices: [9]
+Ingesting subgraphs for slice: 9
+Rank: 6, Assigned Slices: [6]
+Ingesting subgraphs for slice: 6
+Rank: 8, Assigned Slices: [8]
+Ingesting subgraphs for slice: 8
+Rank: 0, Assigned Slices: [0, 10]
+Ingesting subgraphs for slice: 0
+Rank: 5, Assigned Slices: [5]
+Ingesting subgraphs for slice: 5
+Rank: 1, Assigned Slices: [1]
+Ingesting subgraphs for slice: 1
+Rank: 4, Assigned Slices: [4]
+Ingesting subgraphs for slice: 4
+Rank: 7, Assigned Slices: [7]
+Ingesting subgraphs for slice: 7
+Computing kernel distances for slice: 1
+Computing kernel distances for slice: 5
+Computing kernel distances for slice: 9
+Computing kernel distances for slice: 7
+Computing kernel distances for slice: 0
+Computing kernel distances for slice: 6
+Computing kernel distances for slice: 8
+Computing kernel distances for slice: 4
+Computing kernel distances for slice: 3
+Computing kernel distances for slice: 2
+Extracting wall-time data for slice: 7
+Rank: 7 done computing kernel distance data for slice: 7
+Extracting wall-time data for slice: 6
+Rank: 6 done computing kernel distance data for slice: 6
+Extracting wall-time data for slice: 9
+Rank: 9 done computing kernel distance data for slice: 9
+Extracting wall-time data for slice: 1
+Extracting wall-time data for slice: 5
+Rank: 1 done computing kernel distance data for slice: 1
+Extracting wall-time data for slice: 3
+Rank: 5 done computing kernel distance data for slice: 5
+Rank: 3 done computing kernel distance data for slice: 3
+Extracting wall-time data for slice: 4
+Extracting wall-time data for slice: 0
+Extracting wall-time data for slice: 8
+Rank: 4 done computing kernel distance data for slice: 4
+Rank: 0 done computing kernel distance data for slice: 0
+Ingesting subgraphs for slice: 10
+Rank: 8 done computing kernel distance data for slice: 8
+Extracting wall-time data for slice: 2
+Rank: 2 done computing kernel distance data for slice: 2
+Computing kernel distances for slice: 10
+Extracting wall-time data for slice: 10
+Rank: 0 done computing kernel distance data for slice: 10
+Rank: 0 done computing kernel distance data
+Rank: 9 done computing kernel distance data
+Rank: 1 done computing kernel distance data
+Rank: 6 done computing kernel distance data
+Rank: 8 done computing kernel distance data
+Rank: 5 done computing kernel distance data
+Rank: 4 done computing kernel distance data
+Rank: 2 done computing kernel distance data
+Rank: 3 done computing kernel distance data
+Rank: 7 done computing kernel distance data
+Kernel distance data gathered
+Kernel distance data written to: /code/../results//amg2013_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//kdts.pkl

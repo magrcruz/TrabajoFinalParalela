@@ -1,0 +1,19 @@
+  _____   _ __   __  __  _____   _____
+ |  __ \ | '_ \ |  \/  ||  __ \ |_   _|
+ | |__) || | | || \  / || |__) |  | |
+ |  ___/ |_| |_|| |\/| ||  ___/   | |
+ | |            | |  | || |      _| |_
+ |_|            |_|  |_||_|     |_____|
+
+
+ Application:
+  MPI interface: C
+
+ Global settings:
+  Pcontrol: 5
+
+ Loaded modules:
+  Stack default:
+    libdumpi (Pcontrol: 1)
+    libpluto
+

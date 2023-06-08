@@ -1,0 +1,13 @@
+Communication Pattern: message_race
+Scheduler Selected: unscheduled
+Number of Processes: 16
+Number of Iterations: 10
+Message Size: 1
+Number of Nodes: 1
+Starting Non-determinism Percentage: 0.0
+Non-determinism Percentage Step Size: 0.1
+Ending Non-determinism Percentage: 1.0
+Queue for Running Scheduled Jobs: normal
+Time Limit for Running Scheduled Jobs: 10
+Number of Execution Runs: 100
+Output will be stored in /code/../results//message_race_results

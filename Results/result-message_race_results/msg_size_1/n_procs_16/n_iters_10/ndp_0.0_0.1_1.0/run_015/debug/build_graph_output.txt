@@ -1,0 +1,61 @@
+
+DUMPI-to-Graph Configuration:
+Event Graph Options:
+	- Events represented in graph
+		- MPI_Allreduce
+		- MPI_Alltoall
+		Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out12.txt
+- MPI_Alltoallv
+		- MPI_Barrier
+		- MPI_Cancel
+		- MPI_Comm_rank
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out3.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out15.txt
+		- MPI_Comm_size
+		- MPI_Comm_split
+		- MPI_Irecv
+		- MPI_Isend
+		- MPI_Recv
+		- MPI_Reduce
+		- MPI_Request_free
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out4.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out5.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out7.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out8.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out11.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out13.txt
+		- MPI_Send
+		- MPI_Test
+		- MPI_Testall
+		- MPI_Testany
+		- MPI_Testsome
+		- MPI_Wait
+	Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out14.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out1.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out9.txt
+	- MPI_Waitall
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out2.txt
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out10.txt
+		- MPI_Waitany
+		- MPI_Waitsome
+	- Orders represented in graph
+		- message
+		- program
+	Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out6.txt
+- Vertex labels:
+		- lamport_time
+		- type
+		- wall_time
+	- Edge labels:
+		- lamport_time_diff
+		- tag
+		- wall_time_diff
+Graph Construction Options:
+	- Represent unmatched tests? false
+	- Condense unmatched tests? false
+	- Condense matched tests? false
+Trace Directories:
+	- /code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015/
+
+Using pluto/code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//pluto_out0.txt
+Wrote event graph to: /code/../results//message_race_results/msg_size_1/n_procs_16/n_iters_10/ndp_0.0_0.1_1.0//run_015//event_graph.graphml
