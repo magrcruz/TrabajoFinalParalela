@@ -1,0 +1,3 @@
+/home/magr/ANACIN-X/apps/comm_pattern_generator/build/CMakeFiles/rebuild_cache.dir
+/home/magr/ANACIN-X/apps/comm_pattern_generator/build/CMakeFiles/edit_cache.dir
+/home/magr/ANACIN-X/apps/comm_pattern_generator/build/CMakeFiles/comm_pattern_generator.dir

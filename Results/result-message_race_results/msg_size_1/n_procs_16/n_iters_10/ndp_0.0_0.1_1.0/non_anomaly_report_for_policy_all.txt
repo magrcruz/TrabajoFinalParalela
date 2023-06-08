@@ -1,0 +1,6 @@
+Report for anomaly detection policy: all
+-----------------------------------------------------------
+Call-stack to # occurrences:
+-----------------------------------------------------------
+Locations of functions occurring in identified call-stacks:
+-----------------------------------------------------------

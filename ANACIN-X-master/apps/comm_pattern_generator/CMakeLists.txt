@@ -11,6 +11,8 @@ target_sources(comm_pattern_generator PRIVATE src/driver.cpp src/configuration.c
 target_include_directories(comm_pattern_generator PRIVATE include include/comm_pattern_generator include/external)
 
 # Boost
+#set(Boost_INCLUDE_DIR "/home/magr/boost_1_69_0")
+set(Boost_INCLUDE_DIR "/home/magr/boost/include")
 find_package(Boost 1.69.0 REQUIRED mpi serialization)
 target_include_directories(comm_pattern_generator PRIVATE ${Boost_INCLUDE_DIR})
 target_link_libraries(comm_pattern_generator PRIVATE Boost::mpi)

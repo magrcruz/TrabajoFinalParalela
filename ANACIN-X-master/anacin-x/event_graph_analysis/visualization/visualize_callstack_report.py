@@ -68,7 +68,8 @@ def make_callstack_frequency_bar_plot( callstack_to_count, y_axis="normalized" )
     cs_text_size=16
     ax.set_xlabel( x_axis_label , fontsize=text_size )
     ax.set_xticks( bar_positions )
-    ax.set_xlim(-0.5*spacing_factor, max(bar_positions)+(0.5*spacing_factor))
+    if len(bar_positions):
+    	ax.set_xlim(-0.5*spacing_factor, max(bar_positions)+(0.5*spacing_factor))
     
     # Determine short xtick labels
     long_to_short_x_tick_label = {}
@@ -78,8 +79,9 @@ def make_callstack_frequency_bar_plot( callstack_to_count, y_axis="normalized" )
     # Annotate y-axis
     y_axis_label = "Frequency"
     ax.set_ylabel( y_axis_label , fontsize=text_size )
-    ax.set_yticklabels( np.around(np.arange(0.0, 1.1*max(bar_heights), 0.1) , 1 ) , fontsize=text_size )
-    ax.set_ylim(0, 1.2*max(bar_heights))
+    if len(bar_heights):
+    	ax.set_yticklabels( np.around(np.arange(0.0, 1.1*max(bar_heights), 0.1) , 1 ) , fontsize=text_size )
+    	ax.set_ylim(0, 1.2*max(bar_heights))
     
     #plt.show()
 
