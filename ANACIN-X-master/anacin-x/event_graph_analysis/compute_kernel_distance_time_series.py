@@ -17,6 +17,7 @@ import graphkernels.kernels as gk
 import numpy as np
 
 import grakel
+from grakel.kernels import EdgeHistogram, VertexHistogram
 
 import pprint
 
@@ -69,7 +70,7 @@ def make_output_path( traces_root_dir, slicing_policy, kernel_params ):
 ##################### Graph kernel distance functions ##########################
 ################################################################################
 
-#@timer 
+@timer 
 def compute_kernel_distance_matrices( slice_subgraphs, kernel_params ):
     # Relabel based on requested graph kernels
     kernel_label_pair_to_relabeled_graphs = get_relabeled_graphs( slice_subgraphs, kernel_params )
@@ -79,31 +80,50 @@ def compute_kernel_distance_matrices( slice_subgraphs, kernel_params ):
     for kp in kernel_params:
         kernel = kp["name"]
         params = kp["params"]
+        label   = params["label"]
+        key = (kernel, label)
+        relabeled_graphs = kernel_label_pair_to_relabeled_graphs[ key ]
+
+
         # Compute Weisfeiler-Lehman subtree pattern kernel
         if kernel == "wlst":
             n_iters = params["n_iters"]
-            label   = params["label"]
-            kernel_label_pair = ( kernel, label )
-            relabeled_graphs = kernel_label_pair_to_relabeled_graphs[ kernel_label_pair ]
             kernel_mat = gk.CalculateWLKernel( relabeled_graphs, n_iters )
             distance_mat = convert_to_distance_matrix( kernel_mat )
             kernel_params_key = ( kernel, label, n_iters )
             kernel_to_distance_matrix[ kernel_params_key ] = distance_mat
         # Compute edge-histogram kernel
         elif kernel == "eh":
-            label = params["label"]
-            kernel_label_pair = ( kernel, label )
-            relabeled_graphs = kernel_label_pair_to_relabeled_graphs[ kernel_label_pair ]
-            kernel_mat = gk.CalculateEdgeHistKernel( relabeled_graphs )
+            #kernel_mat = gk.CalculateEdgeHistKernel( relabeled_graphs )
+            kernel_mat = grakel.EdgeHistogram.transform( relabeled_graphs ) # MODIFICATION Use of grakel
             distance_mat = convert_to_distance_matrix( kernel_mat )
-            kernel_key = ( kernel, label )
-            kernel_to_distance_matrix[ kernel_key ] = distance_mat
+            kernel_to_distance_matrix[ key ] = distance_mat
         # Compute vertex-histogram kernel
         elif kernel == "vh":
-            label = params["label"]
-            key = (kernel, label)
-            relabeled_graphs = kernel_label_pair_to_relabeled_graphs[ key ]
-            kernel_mat = gk.CalculateVertexHistKernel( relabeled_graphs )
+            #kernel_mat = gk.CalculateVertexHistKernel( relabeled_graphs )
+            kernel_mat = grakel.VertexHistogram.transform( relabeled_graphs ) # MODIFICATION Use of grakel
+            distance_mat = convert_to_distance_matrix( kernel_mat )
+            kernel_to_distance_matrix[ key ] = distance_mat
+
+        # IMPROVEMENT
+        # Compute VertexEdgeHist
+        elif kernel == "vehist":
+            kernel_mat = gk.CalculateVertexEdgeHistKernel( relabeled_graphs )
+            distance_mat = convert_to_distance_matrix( kernel_mat )
+            kernel_to_distance_matrix[ key ] = distance_mat
+        # Compute VertexHistGauss
+        elif kernel == "vhgauss":
+            kernel_mat = gk.CalculateVertexHistGaussKernel( relabeled_graphs )
+            distance_mat = convert_to_distance_matrix( kernel_mat )
+            kernel_to_distance_matrix[ key ] = distance_mat
+        # Compute EdgeHistGauss
+        elif kernel == "ehgauss":
+            kernel_mat = gk.CalculateEdgeHistGaussKernel( relabeled_graphs )
+            distance_mat = convert_to_distance_matrix( kernel_mat )
+            kernel_to_distance_matrix[ key ] = distance_mat
+        # Compute KStepRandomWalk
+        elif kernel == "ksrwalk":
+            kernel_mat = gk.CalculateKStepRandomWalkKernel( relabeled_graphs )
             distance_mat = convert_to_distance_matrix( kernel_mat )
             kernel_to_distance_matrix[ key ] = distance_mat
         else:
@@ -290,8 +310,13 @@ def ingest_inputs( traces_root_dir, kernel_file,
     # Determine what the subdirectory containing the slices is called
     slice_dirs, slicing_policy = get_slice_dirs( trace_dirs, slicing_policy_file, slice_dir_name )
     # Read in file describing all graph kernels to compute and their parameters
-    with open( kernel_file, "r" ) as infile:
-        kernels = json.load( infile )["kernels"]
+    with open( kernel_file, "r" ) as infile: #MODIFIED
+        print(kernel_file)
+        try:
+            kernels = json.load(infile)["kernels"]
+        except Exception as e:
+            print("Se produjo un error:", e)
+            raise SystemExit(1)
     return slice_dirs, kernels, slicing_policy    
 
 ################################################################################
