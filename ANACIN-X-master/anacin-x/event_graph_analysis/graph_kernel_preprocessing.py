@@ -137,14 +137,15 @@ def get_relabeled_graphs( graphs, kernels ):
         # use the same relabeled graphs (e.g., multiple WL kernels with the same
         # label but different numbers of WL iterations)
         if key not in all_relabeled_graphs:
+            relabeled_graphs = []
             # Relabel for Weisfeiler-Lehman Subtree-Pattern kernel 
             if name == "wlst":
                 relabeled_graphs = [ relabel_for_wlst_kernel(g, label) for g in graphs ]
             # Relabel for edge-histogram kernel 
-            elif name == "eh":
+            elif name == "eh" or name == "ehgauss": #MODIFICATION
                 relabeled_graphs = [ relabel_for_eh_kernel(g, label) for g in graphs ]
             # Relabel for vertex-histogram kernel
-            elif name == "vh":
+            elif name == "vh" or name == "vhgauss": #MODIFICATION
                 relabeled_graphs = [ relabel_for_vh_kernel(g, label) for g in graphs ]
             all_relabeled_graphs[ key ] = relabeled_graphs
     return all_relabeled_graphs
