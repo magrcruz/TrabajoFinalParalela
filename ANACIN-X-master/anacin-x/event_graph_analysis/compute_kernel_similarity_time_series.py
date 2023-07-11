@@ -92,11 +92,11 @@ def compute_kernel_similarity_matrices( slice_subgraphs, kernel_params ):
         # Compute edge-histogram kernel
         elif kernel == "eh":
             #similarity_mat = gk.CalculateEdgeHistKernel( relabeled_graphs )
-            similarity_mat = grakel.EdgeHistogram.transform( relabeled_graphs ) # MODIFICATION Use of grakel
+            similarity_mat = grakel.CalculateEdgeHistGaussKernel.transform( relabeled_graphs ) # MODIFICATION Use of grakel
             kernel_to_similarity_matrix[ kernel_label_pair ] = similarity_mat
         # Compute vertex-histogram kernel
         elif kernel == "vh":
-            similarity_mat = grakel.VertexHistogram.transform( relabeled_graphs )# MODIFICATION Use of grakel
+            similarity_mat = grakel.CalculateVertexHistGaussKernel.transform( relabeled_graphs )# MODIFICATION Use of grakel
             kernel_to_similarity_matrix[ key ] = similarity_mat
 
         # IMPROVEMENT

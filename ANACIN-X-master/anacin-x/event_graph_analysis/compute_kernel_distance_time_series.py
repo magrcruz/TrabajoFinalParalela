@@ -95,13 +95,13 @@ def compute_kernel_distance_matrices( slice_subgraphs, kernel_params ):
         # Compute edge-histogram kernel
         elif kernel == "eh":
             #kernel_mat = gk.CalculateEdgeHistKernel( relabeled_graphs )
-            kernel_mat = grakel.EdgeHistogram.transform( relabeled_graphs ) # MODIFICATION Use of grakel
+            kernel_mat = grakel.CalculateEdgeHistGaussKernel.transform( relabeled_graphs ) # MODIFICATION Use of grakel
             distance_mat = convert_to_distance_matrix( kernel_mat )
             kernel_to_distance_matrix[ key ] = distance_mat
         # Compute vertex-histogram kernel
         elif kernel == "vh":
             #kernel_mat = gk.CalculateVertexHistKernel( relabeled_graphs )
-            kernel_mat = grakel.VertexHistogram.transform( relabeled_graphs ) # MODIFICATION Use of grakel
+            kernel_mat = grakel.CalculateVertexHistGaussKernel.transform( relabeled_graphs ) # MODIFICATION Use of grakel
             distance_mat = convert_to_distance_matrix( kernel_mat )
             kernel_to_distance_matrix[ key ] = distance_mat
 
